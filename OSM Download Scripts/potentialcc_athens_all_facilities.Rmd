@@ -1,0 +1,177 @@
+---
+title: "athens_all_candidates"
+output: html_document
+date: "2025-09-10"
+---
+
+```{r setup}
+library(dplyr)
+```
+
+```{r read-csv-files}
+# Read all six CSV files
+athens_community_centres <- read.csv("Data/potential cooling centres/athens_community_centres.csv", stringsAsFactors = FALSE, sep = ",")
+athens_libraries <- read.csv("Data/potential cooling centres/athens_libraries.csv", stringsAsFactors = FALSE, sep = ",")
+athens_museum <- read.csv("Data/potential cooling centres/athens_museum.csv", stringsAsFactors = FALSE, sep = ",")
+athens_schools <- read.csv("Data/potential cooling centres/athens_schools.csv", stringsAsFactors = FALSE, sep = ",")
+athens_social_centres <- read.csv("Data/potential cooling centres/athens_social_centres.csv", stringsAsFactors = FALSE, sep = ",")
+athens_university <- read.csv("Data/potential cooling centres/athens_university.csv", stringsAsFactors = FALSE, sep = ",")
+```
+
+```{r add-facility-type}
+# Add a column to identify the facility type for each dataset
+athens_community_centres$facility_category <- "community_centre"
+athens_libraries$facility_category <- "library"
+athens_museum$facility_category <- "museum"
+athens_schools$facility_category <- "school"
+athens_social_centres$facility_category <- "social_centre"
+athens_university$facility_category <- "university"
+```
+
+```{r check-columns}
+# Check what columns exist in each dataset
+cat("Columns in each dataset:\n")
+cat("Community centres:", paste(names(athens_community_centres), collapse = ", "), "\n\n")
+cat("Libraries:", paste(names(athens_libraries), collapse = ", "), "\n\n")
+cat("Museums:", paste(names(athens_museum), collapse = ", "), "\n\n")
+cat("Schools:", paste(names(athens_schools), collapse = ", "), "\n\n")
+cat("Social centres:", paste(names(athens_social_centres), collapse = ", "), "\n\n")
+cat("Universities:", paste(names(athens_university), collapse = ", "), "\n\n")
+
+# Get all unique columns across all datasets
+all_columns <- unique(c(
+  names(athens_community_centres),
+  names(athens_libraries),
+  names(athens_museum),
+  names(athens_schools),
+  names(athens_social_centres),
+  names(athens_university)
+))
+
+cat("All unique columns:", paste(all_columns, collapse = ", "), "\n")
+```
+
+```{r combine-datasets}
+
+# Convert addr.postcode to character in all datasets to ensure consistency
+athens_community_centres <- athens_community_centres %>%
+  mutate(addr.postcode = as.character(addr.postcode))
+
+athens_libraries <- athens_libraries %>%
+  mutate(addr.postcode = as.character(addr.postcode))
+
+athens_museum <- athens_museum %>%
+  mutate(addr.postcode = as.character(addr.postcode))
+
+athens_schools <- athens_schools %>%
+  mutate(addr.postcode = as.character(addr.postcode))
+
+athens_social_centres <- athens_social_centres %>%
+  mutate(addr.postcode = as.character(addr.postcode))
+
+athens_university <- athens_university %>%
+  mutate(addr.postcode = as.character(addr.postcode))
+
+
+# Use bind_rows to combine all datasets
+# This automatically fills missing columns with NA
+athens_all_facilities <- bind_rows(
+  athens_community_centres,
+  athens_libraries,
+  athens_museum,
+  athens_schools,
+  athens_social_centres,
+  athens_university
+)
+
+# Drop the amenity and tourism columns as we added facility type as consistent type column
+athens_all_facilities <- athens_all_facilities %>%
+  select(-any_of(c("amenity", "tourism")))
+
+
+# Check the result
+cat("Combined dataset dimensions:", nrow(athens_all_facilities), "rows x", ncol(athens_all_facilities), "columns\n")
+cat("Final columns:", paste(names(athens_all_facilities), collapse = ", "), "\n")
+```
+
+```{r summary-stats}
+# Summary statistics
+cat("\nSummary of combined dataset:\n")
+cat("Total facilities:", nrow(athens_all_facilities), "\n")
+
+cat("\nFacilities by category:\n")
+print(table(athens_all_facilities$facility_category, useNA = "ifany"))
+
+cat("\nFacilities with names:", sum(!is.na(athens_all_facilities$name)), "\n")
+cat("Facilities with coordinates:", sum(!is.na(athens_all_facilities$x) & !is.na(athens_all_facilities$y)), "\n")
+```
+
+```{r save-combined-data}
+# Save the combined dataset
+write.csv(athens_all_facilities, "Data/potential cooling centres/athens_all_facilities.csv", row.names = FALSE)
+
+cat("Combined data saved as athens_all_facilities.csv\n")
+cat("Total rows:", nrow(athens_all_facilities), "\n")
+cat("Total columns:", ncol(athens_all_facilities), "\n")
+```
+
+```{r preview-data}
+# Show first few rows of combined data
+cat("\nPreview of combined dataset:\n")
+head(athens_all_facilities, 10)
+```
+
+```{r remove facilities that are cooling centres already}
+# Read the CSV files
+athens_existing <- read.csv("Data/existing cooling centres/athens_existing_coolingcentres.csv", sep = ";")
+athens_all_facilities <- read.csv("Data/potential cooling centres/athens_all_facilities.csv", sep = ",")
+
+# Convert to sf objects using x and y columns
+athens_existing_sf <- st_as_sf(athens_existing, coords = c("lon", "lat"), crs = 4326)
+athens_all_facilities_sf <- st_as_sf(athens_all_facilities, coords = c("x", "y"), crs = 4326)
+
+# Transform to a projected CRS to measure in meters
+# EPSG:2100 is common for athens (MGI / Austria Lambert)
+athens_existing_proj <- st_transform(athens_existing_sf, 2100)
+athens_all_facilities_proj <- st_transform(athens_all_facilities_sf, 2100)
+
+# Find all facilities within 50 meters of existing cooling centres
+athens_nearby_matches <- st_is_within_distance(athens_all_facilities_proj, athens_existing_proj, dist = 50)
+
+# Keep only facilities that are NOT within 20m of any existing cooling centre
+athens_not_near_existing <- lengths(athens_nearby_matches) == 0
+athens_all_candidates <- athens_all_facilities[athens_not_near_existing, ]
+
+# Save cleaned CSV
+write.csv(
+  athens_all_candidates,
+  "Data/potential cooling centres/athens_all_candidates.csv",
+  row.names = FALSE
+)
+```
+
+```{r check on removed duplicates}
+# View deleted duplicates
+# Projected geometries of removed candidates
+athens_removed_candidates <- athens_all_facilities_proj[lengths(athens_nearby_matches) > 0, ]
+
+# Indices of nearest matches from existing cooling centres
+athens_matched_indices <- athens_nearby_matches[lengths(athens_nearby_matches) > 0]
+matched_indices_flat <- unlist(lapply(athens_matched_indices, function(x) x[[1]]))
+
+# Get matched geometries and names from existing centres
+athens_matched_existing <- athens_existing_proj[matched_indices_flat, ]
+athens_matched_existing_names <- athens_existing$name[matched_indices_flat]
+
+# Combine removed candidates with matched centre info
+athens_matched_pairs <- cbind(
+  athens_removed_candidates,
+  matched_name = athens_matched_existing_names,
+  matched_lon = st_coordinates(athens_matched_existing)[, 1],
+  matched_lat = st_coordinates(athens_matched_existing)[, 2]
+)
+
+# View the result
+View(athens_matched_pairs)
+head(athens_matched_pairs)
+```

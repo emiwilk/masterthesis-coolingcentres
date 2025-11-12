@@ -1,0 +1,274 @@
+```{r setup, message=FALSE, warning=FALSE}
+# Load required schools
+library(osmdata)
+library(sf)
+library(dplyr)
+library(leaflet)
+library(ggplot2)
+library(terra)
+```
+
+```{r get boundary shape and box}
+## create rectangular boundary box based on bologna districts polygon
+bologna_bbox <- st_bbox(bologna_districts)
+
+## visual check if bounding box and actual shape overlap
+# Bounding Box as Polygon (as required by ggplot)
+bbox_polygon <- st_as_sfc(bologna_bbox)
+
+# Plot 
+ggplot() +
+  # Bounding Box as red dashed rectangular
+  geom_sf(data = bbox_polygon, 
+          color = "red", 
+          fill = "transparent", 
+          linewidth = 2,
+          linetype = "dashed") +
+  # bologna districts as blue polygons
+  geom_sf(data = bologna_districts, 
+          color = "blue", 
+          fill = "lightblue", 
+          alpha = 0.5,
+          linewidth = 0.8) +
+  # Title 
+  ggtitle("bologna Districts (blue) and OpenStreetMap Bounding Box (red)") +
+   # Show coordinates
+  coord_sf(crs = st_crs(bologna_districts)) +
+  # Design
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, hjust = 0.5),
+    plot.caption = element_text(size = 10, hjust = 0.5),
+    axis.text = element_text(size = 8)
+  )
+```
+
+```{r get-osm-data}
+# Get OSM library data within bologna bbox
+bologna_schools_query <- opq(bbox = bologna_bbox) %>%
+  add_osm_feature(key = "amenity", value = "school") %>%
+  osmdata_sf()
+
+# Extract points and polygons
+schools_points <- bologna_schools_query$osm_points
+schools_polygons <- bologna_schools_query$osm_polygons
+
+# Check what columns are available (for debugging)
+if (!is.null(schools_points) && nrow(schools_points) > 0) {
+  cat("Available columns in schools_points:\n")
+  print(names(schools_points))
+}
+
+if (!is.null(schools_polygons) && nrow(schools_polygons) > 0) {
+  cat("Available columns in schools_polygons:\n")
+  print(names(schools_polygons))
+}
+```
+
+```{r process-points}
+# Process schools points if they exist
+if (!is.null(schools_points) && nrow(schools_points) > 0) {
+  # Check if operator:type column exists and filter accordingly
+  if ("operator:type" %in% names(schools_points)) {
+    schools_points_filtered <- schools_points %>%
+      filter(is.na(`operator:type`) | `operator:type` == "public" | `operator:type` == "ngo" | `operator:type` == "government") %>%
+      st_intersection(bologna_districts)
+  } else {
+    # If operator:type doesn't exist, include all schools
+    schools_points_filtered <- schools_points %>%
+      st_intersection(bologna_districts)
+  }
+  
+  # Select only columns that exist
+  available_cols <- intersect(c("osm_id", "name", "amenity", "operator.type", "operator", 
+                                "addr.postcode", "website", "geometry"),
+                              names(schools_points_filtered))
+  
+  schools_points_clean <- schools_points_filtered %>%
+    select(all_of(available_cols)) %>%
+    mutate(schools_type = "point")
+} else {
+  schools_points_clean <- sf::st_sf(data.frame(), crs = st_crs(bologna_districts))
+}
+```
+
+```{r process-polygons}
+# Process schools polygons if they exist - convert to centroids
+if (!is.null(schools_polygons) && nrow(schools_polygons) > 0) {
+  # Check if operator:type column exists and filter accordingly
+  if ("operator:type" %in% names(schools_polygons)) {
+    schools_polygons_filtered <- schools_polygons %>%
+      filter(is.na(`operator:type`) | `operator:type` == "public" | `operator:type` == "ngo" | `operator:type` == "government") %>%
+      st_intersection(bologna_districts)
+  } else {
+    # If operator:type doesn't exist, include all schools
+    schools_polygons_filtered <- schools_polygons %>%
+      st_intersection(bologna_districts)
+  }
+  
+  # Select only columns that exist
+  available_cols <- intersect(c("osm_id", "name", "amenity", "operator.type", "operator", 
+                                "addr.postcode", "website", "geometry"),
+                              names(schools_polygons_filtered))
+  
+  schools_polygons_clean <- schools_polygons_filtered %>%
+    select(all_of(available_cols)) %>%
+    st_centroid() %>%
+    mutate(schools_type = "polygon_centroid")
+} else {
+  schools_polygons_clean <- sf::st_sf(data.frame(), crs = st_crs(bologna_districts))
+}
+```
+
+```{r combine-and-deduplicate}
+# Combine points and polygons if both exist
+if (nrow(schools_points_clean) > 0 && nrow(schools_polygons_clean) > 0) {
+  # Ensure both have same columns
+  common_cols <- intersect(names(schools_points_clean), names(schools_polygons_clean))
+  
+  bologna_schools <- bind_rows(
+    schools_points_clean[common_cols],
+    schools_polygons_clean[common_cols]
+  )
+} else if (nrow(schools_points_clean) > 0) {
+  bologna_schools <- schools_points_clean
+} else if (nrow(schools_polygons_clean) > 0) {
+  bologna_schools <- schools_polygons_clean
+} else {
+  bologna_schools <- sf::st_sf(data.frame(), crs = st_crs(bologna_districts))
+}
+```
+
+```{r remove-duplicates}
+# Remove schools that are very close to each other (within 100 meters)
+# First filter out NA names, then apply proximity filtering
+if (nrow(bologna_schools) > 0) {
+  # First step: Remove rows where name is NA
+  bologna_schools_no_na <- bologna_schools %>%
+    filter(!is.na(name))
+  
+  # Check if we still have data after NA filtering
+  if (nrow(bologna_schools_no_na) > 0) {
+    # All geometries are now points, so we can directly calculate distances
+    # Create distance matrix
+    dist_matrix <- st_distance(bologna_schools_no_na)
+    
+    # Find schools within 100m of each other
+    close_pairs <- which(dist_matrix < units::set_units(100, "m") & 
+                           upper.tri(dist_matrix, diag = FALSE), arr.ind = TRUE)
+    
+    # If there are close pairs, keep only one from each pair
+    if (nrow(close_pairs) > 0) {
+      # Keep the first school from each close pair
+      to_remove <- unique(close_pairs[,2])
+      bologna_schools_final <- bologna_schools_no_na[-to_remove, ]
+    } else {
+      bologna_schools_final <- bologna_schools_no_na
+    }
+  } else {
+    # No data left after NA filtering - create empty sf object
+    bologna_schools_final <- st_sf(
+      geometry = st_sfc(crs = st_crs(bologna_districts))
+    )
+  }
+} else {
+  # No initial data - create empty sf object
+  bologna_schools_final <- st_sf(
+    geometry = st_sfc(crs = st_crs(bologna_districts))
+  )
+}
+```
+
+```{r summary-stats}
+# Print summary statistics
+cat("Total schools found:", nrow(bologna_schools_final), "\n")
+if (nrow(bologna_schools_final) > 0) {
+  cat("schools by type:\n")
+  print(table(bologna_schools_final$schools_type, useNA = "ifany"))
+  
+  cat("\nschools by operator type:\n")
+  print(table(bologna_schools_final$operator.type, useNA = "ifany"))
+  
+  cat("\nschools with names:", sum(!is.na(bologna_schools_final$name)), "\n")
+}
+```
+
+```{r display-results}
+# Display the first few schools with key information
+if (nrow(bologna_schools_final) > 0) {
+  # Select only columns that exist
+  display_cols <- intersect(c("osm_id", "name", "amenity", "operator", "operator.type", 
+                              "addr.postcode", "website", "school_type"),
+                            names(bologna_schools_final))
+  
+  bologna_schools_display <- bologna_schools_final %>%
+    st_drop_geometry() %>%
+    select(all_of(display_cols)) %>%
+    head(10)
+  
+  print(bologna_schools_display)
+}
+```
+
+```{r create-map, fig.width=10, fig.height=8}
+# Create a simple map of the schools (all are now points)
+if (nrow(bologna_schools_final) > 0) {
+  # Transform to WGS84 for leaflet
+  schools_wgs84 <- st_transform(bologna_schools_final, 4326)
+  
+  # Create different colors for original points vs polygon centroids
+  colors <- ifelse(schools_wgs84$schools_type == "point", "blue", "red")
+  
+  # Create map
+  schools_map <- leaflet(schools_wgs84) %>%
+    addTiles() %>%
+    addCircleMarkers(
+      color = colors,
+      radius = 6,
+      popup = ~paste0(
+        "<b>", ifelse(is.na(name), "Unnamed schools", name), "</b><br>",
+        "Type: ", schools_type, "<br>",
+        "Operator: ", ifelse(is.na(operator), "Unknown", operator), "<br>",
+        "Address: ", 
+        if("addr:street" %in% names(schools_wgs84)) {
+          ifelse(is.na(`addr:street`), "", 
+                 paste(`addr:street`, 
+                       ifelse("addr:housenumber" %in% names(schools_wgs84) & !is.na(`addr:housenumber`), 
+                              `addr:housenumber`, ""), sep = " "))
+        } else {
+          "No address info"
+        }
+      )
+    ) %>%
+    addLegend(
+      "bottomright",
+      colors = c("blue", "red"),
+      labels = c("Original Point", "Polygon Centroid"),
+      title = "schools Type"
+    )
+  
+  schools_map
+}
+```
+
+```{r save-data}
+# Save the final dataset
+if (nrow(bologna_schools_final) > 0) {
+  
+  # Create CSV with specific columns including x,y coordinates
+  bologna_schools_table <- bologna_schools_final %>%
+    # Extract coordinates
+    mutate(
+      x = st_coordinates(.)[,1],
+      y = st_coordinates(.)[,2]
+    ) %>%
+    st_drop_geometry() %>%
+    # Select only the requested columns
+    select(osm_id, name, amenity, operator.type, operator, addr.postcode, x, y)
+  
+  write.csv(bologna_schools_table, "Data/potential cooling centres/bologna_schools.csv", row.names = FALSE)
+  
+  cat("Data saved as bologna_schools.rds and bologna_schools.csv\n")
+  cat("CSV contains columns: osm_id, name, amenity, operator.type, operator, addr.postcode, x, y\n")
+}
+```

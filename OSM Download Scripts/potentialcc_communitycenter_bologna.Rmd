@@ -1,0 +1,265 @@
+```{r setup, message=FALSE, warning=FALSE}
+# Load required libraries
+library(osmdata)
+library(sf)
+library(dplyr)
+library(leaflet)
+library(ggplot2)
+```
+
+```{r get boundary shape and box}
+## create rectangular boundary box based on bologna districts polygon
+bologna_bbox <- st_bbox(bologna_districts)
+
+## visual check if bounding box and actual shape overlap
+# Bounding Box as Polygon (as required by ggplot)
+bbox_polygon <- st_as_sfc(bologna_bbox)
+
+# Plot 
+ggplot() +
+  # Bounding Box as red dashed rectangular
+  geom_sf(data = bbox_polygon, 
+          color = "red", 
+          fill = "transparent", 
+          linewidth = 2,
+          linetype = "dashed") +
+  # bologna districts as blue polygons
+  geom_sf(data = bologna_districts, 
+          color = "blue", 
+          fill = "lightblue", 
+          alpha = 0.5,
+          linewidth = 0.8) +
+  # Title 
+  ggtitle("bologna Districts (blue) and OpenStreetMap Bounding Box (red)") +
+   # Show coordinates
+  coord_sf(crs = st_crs(bologna_districts)) +
+  # Design
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, hjust = 0.5),
+    plot.caption = element_text(size = 10, hjust = 0.5),
+    axis.text = element_text(size = 8)
+  )
+```
+
+
+```{r get-osm-data}
+# Get OSM community centre data within bologna bbox
+bologna_community_centres_query <- opq(bbox = bologna_bbox) %>%
+  add_osm_feature(key = "amenity", value = "community_centre") %>%
+  osmdata_sf()
+
+# Extract points and polygons
+community_centre_points <- bologna_community_centres_query$osm_points
+community_centre_polygons <- bologna_community_centres_query$osm_polygons
+
+# Check what columns are available (for debugging)
+if (!is.null(community_centre_points) && nrow(community_centre_points) > 0) {
+  cat("Available columns in community_centre_points:\n")
+  print(names(community_centre_points))
+}
+
+if (!is.null(community_centre_polygons) && nrow(community_centre_polygons) > 0) {
+  cat("Available columns in community_centre_polygons:\n")
+  print(names(community_centre_polygons))
+}
+```
+
+```{r process-points}
+# Process community centre points if they exist
+if (!is.null(community_centre_points) && nrow(community_centre_points) > 0) {
+  # Include all community centres - no filtering by operator:type
+  community_centre_points_filtered <- community_centre_points %>%
+    st_intersection(bologna_districts)
+  
+  # Select only columns that exist
+  available_cols <- intersect(c("osm_id", "name", "amenity", "addr.postcode", "community_centre", "community_centre.for", "website", "opening_hours", "operator", "operator.type", "geometry"),
+                              names(community_centre_points_filtered))
+  
+  community_centre_points_clean <- community_centre_points_filtered %>%
+    select(all_of(available_cols)) %>%
+    mutate(facility_type = "point")
+} else {
+  community_centre_points_clean <- sf::st_sf(data.frame(), crs = st_crs(bologna_districts))
+}
+```
+
+```{r process-polygons}
+# Process community centre polygons if they exist - convert to centroids
+if (!is.null(community_centre_polygons) && nrow(community_centre_polygons) > 0) {
+  # Include all community centres - no filtering by operator:type
+  community_centre_polygons_filtered <- community_centre_polygons %>%
+    st_intersection(bologna_districts)
+  
+  # Select only columns that exist
+  available_cols <- intersect(c("osm_id", "name", "amenity", "addr.postcode", "community_centre", "community_centre.for", "website", "opening_hours", "operator", "operator.type", "geometry"),
+                              names(community_centre_polygons_filtered))
+  
+  community_centre_polygons_clean <- community_centre_polygons_filtered %>%
+    select(all_of(available_cols)) %>%
+    st_centroid() %>%
+    mutate(facility_type = "polygon_centroid")
+} else {
+  community_centre_polygons_clean <- sf::st_sf(data.frame(), crs = st_crs(bologna_districts))
+}
+```
+
+```{r combine-and-deduplicate}
+# Combine points and polygons if both exist
+if (nrow(community_centre_points_clean) > 0 && nrow(community_centre_polygons_clean) > 0) {
+  # Ensure both have same columns
+  common_cols <- intersect(names(community_centre_points_clean), names(community_centre_polygons_clean))
+  
+  bologna_community_centres <- bind_rows(
+    community_centre_points_clean[common_cols],
+    community_centre_polygons_clean[common_cols]
+  )
+} else if (nrow(community_centre_points_clean) > 0) {
+  bologna_community_centres <- community_centre_points_clean
+} else if (nrow(community_centre_polygons_clean) > 0) {
+  bologna_community_centres <- community_centre_polygons_clean
+} else {
+  bologna_community_centres <- sf::st_sf(data.frame(), crs = st_crs(bologna_districts))
+}
+```
+
+```{r remove-duplicates}
+# Remove community centres that are very close to each other (within 100 meters)
+# First filter out NA names, then apply proximity filtering
+if (nrow(bologna_community_centres) > 0) {
+  # First step: Remove rows where name is NA
+  bologna_community_centres_no_na <- bologna_community_centres %>%
+    filter(!is.na(name))
+  
+  # Check if we still have data after NA filtering
+  if (nrow(bologna_community_centres_no_na) > 0) {
+    # All geometries are now points, so we can directly calculate distances
+    # Create distance matrix
+    dist_matrix <- st_distance(bologna_community_centres_no_na)
+    
+    # Find community centres within 100m of each other
+    close_pairs <- which(dist_matrix < units::set_units(100, "m") & 
+                           upper.tri(dist_matrix, diag = FALSE), arr.ind = TRUE)
+    
+    # If there are close pairs, keep only one from each pair
+    if (nrow(close_pairs) > 0) {
+      # Keep the first community centre from each close pair
+      to_remove <- unique(close_pairs[,2])
+      bologna_community_centres_final <- bologna_community_centres_no_na[-to_remove, ]
+    } else {
+      bologna_community_centres_final <- bologna_community_centres_no_na
+    }
+  } else {
+    # No data left after NA filtering - create empty sf object
+    bologna_community_centres_final <- st_sf(
+      geometry = st_sfc(crs = st_crs(bologna_districts))
+    )
+  }
+} else {
+  # No initial data - create empty sf object
+  bologna_community_centres_final <- st_sf(
+    geometry = st_sfc(crs = st_crs(bologna_districts))
+  )
+}
+```
+
+```{r summary-stats}
+# Print summary statistics
+cat("Total community centres found:", nrow(bologna_community_centres_final), "\n")
+
+if (nrow(bologna_community_centres_final) > 0) {
+  cat("Community centres by type:\n")
+  print(table(bologna_community_centres_final$facility_type, useNA = "ifany"))
+  
+  # Check if operator:type column exists before using it
+  if ("operator.type" %in% names(bologna_community_centres_final)) {
+    cat("\nCommunity centres by operator type:\n")
+    operator_type_col <- bologna_community_centres_final[["operator.type"]]
+    print(table(operator_type_col, useNA = "ifany"))
+  } else {
+    cat("\nNo operator:type information available\n")
+  }
+  
+  cat("\nCommunity centres with names:", sum(!is.na(bologna_community_centres_final$name)), "\n")
+}
+```
+              
+
+```{r display-results}
+# Display the first few community centres with key information
+if (nrow(bologna_community_centres_final) > 0) {
+  # Select only columns that exist
+  display_cols <- intersect(c("osm_id", "name", "amenity", "addr.postcode", "community_centre", "community_centre.for", "website", "opening_hours", "operator", "operator.type", "facility_type"),
+                            names(bologna_community_centres_final))
+  
+  bologna_community_centres_display <- bologna_community_centres_final %>%
+    st_drop_geometry() %>%
+    select(all_of(display_cols)) %>%
+    head(10)
+  
+  print(bologna_community_centres_display)
+}
+```
+
+```{r create-map, fig.width=10, fig.height=8}
+# Create a simple map of the community centres (all are now points)
+if (nrow(bologna_community_centres_final) > 0) {
+  # Transform to WGS84 for leaflet
+  community_centres_wgs84 <- st_transform(bologna_community_centres_final, 4326)
+  
+  # Create different colors for original points vs polygon centroids
+  colors <- ifelse(community_centres_wgs84$facility_type == "point", "blue", "red")
+  
+  # Create map
+  community_centre_map <- leaflet(community_centres_wgs84) %>%
+    addTiles() %>%
+    addCircleMarkers(
+      color = colors,
+      radius = 6,
+      popup = ~paste0(
+        "<b>", ifelse(is.na(name), "Unnamed Community Centre", name), "</b><br>",
+        "Type: ", facility_type, "<br>",
+        "Operator: ", ifelse(is.na(operator), "Unknown", operator), "<br>",
+        "Address: ", 
+        if("addr:street" %in% names(community_centres_wgs84)) {
+          ifelse(is.na(`addr:street`), "", 
+                 paste(`addr:street`, 
+                       ifelse("addr:housenumber" %in% names(community_centres_wgs84) & !is.na(`addr:housenumber`), 
+                              `addr:housenumber`, ""), sep = " "))
+        } else {
+          "No address info"
+        }
+      )
+    ) %>%
+    addLegend(
+      "bottomright",
+      colors = c("blue", "red"),
+      labels = c("Original Point", "Polygon Centroid"),
+      title = "Community Centre Type"
+    )
+  
+  community_centre_map
+}
+```
+
+```{r save-data}
+# Save the final dataset
+if (nrow(bologna_community_centres_final) > 0) {
+ 
+  # Create CSV with specific columns including x,y coordinates
+  bologna_community_centres_table <- bologna_community_centres_final %>%
+    # Extract coordinates
+    mutate(
+      x = st_coordinates(.)[,1],
+      y = st_coordinates(.)[,2]
+    ) %>%
+    st_drop_geometry() %>%
+    # Select only the requested columns
+    select(osm_id, name, amenity, operator, operator.type, community_centre, x, y)
+  
+  write.csv(bologna_community_centres_table, "Data/potential cooling centres/bologna_community_centres.csv", row.names = FALSE)
+  
+  cat("Data saved as bologna_community_centres.rds and bologna_community_centres.csv\n")
+  cat("CSV contains columns: osm_id, name, amenity, operator, operator.type, community_centre, community_centre.for, addr.postcode, x, y\n")
+}
+```

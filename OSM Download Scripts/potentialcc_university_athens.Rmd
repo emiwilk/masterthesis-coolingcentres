@@ -1,0 +1,320 @@
+```{r setup, message=FALSE, warning=FALSE}
+# Load required university
+library(osmdata)
+library(sf)
+library(dplyr)
+library(leaflet)
+library(ggplot2)
+library(terra)
+```
+
+```{r get boundary shape and box}
+## create rectangular boundary box based on athens districts polygon
+athens_bbox <- st_bbox(athens_districts)
+
+## visual check if bounding box and actual shape overlap
+# Bounding Box as Polygon (as required by ggplot)
+bbox_polygon <- st_as_sfc(athens_bbox)
+
+# Plot 
+ggplot() +
+  # Bounding Box as red dashed rectangular
+  geom_sf(data = bbox_polygon, 
+          color = "red", 
+          fill = "transparent", 
+          linewidth = 2,
+          linetype = "dashed") +
+  # athens districts as blue polygons
+  geom_sf(data = athens_districts, 
+          color = "blue", 
+          fill = "lightblue", 
+          alpha = 0.5,
+          linewidth = 0.8) +
+  # Title 
+  ggtitle("athens Districts (blue) and OpenStreetMap Bounding Box (red)") +
+   # Show coordinates
+  coord_sf(crs = st_crs(athens_districts)) +
+  # Design
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, hjust = 0.5),
+    plot.caption = element_text(size = 10, hjust = 0.5),
+    axis.text = element_text(size = 8)
+  )
+```
+
+```{r get-osm-data}
+# Get OSM library data within athens bbox
+athens_university_query <- opq(bbox = athens_bbox) %>%
+  add_osm_feature(key = "amenity", value = "university") %>%
+  osmdata_sf()
+
+# Extract points and polygons
+university_points <- athens_university_query$osm_points
+university_polygons <- athens_university_query$osm_polygons
+
+# Check what columns are available (for debugging)
+if (!is.null(university_points) && nrow(university_points) > 0) {
+  cat("Available columns in university_points:\n")
+  print(names(university_points))
+}
+
+if (!is.null(university_polygons) && nrow(university_polygons) > 0) {
+  cat("Available columns in university_polygons:\n")
+  print(names(university_polygons))
+}
+```
+
+```{r process-points}
+# Process university points if they exist
+if (!is.null(university_points) && nrow(university_points) > 0) {
+  # Check if operator:type column exists and filter accordingly
+  if ("operator:type" %in% names(university_points)) {
+    university_points_filtered <- university_points %>%
+      filter(is.na(`operator:type`) | `operator:type` == "public" | `operator:type` == "university" | `operator:type` == "government") %>%
+      st_intersection(athens_districts)
+  } else {
+    # If operator:type doesn't exist, include all university
+    university_points_filtered <- university_points %>%
+      st_intersection(athens_districts)
+  }
+  
+  # Select only columns that exist
+  available_cols <- intersect(c("osm_id", "name", "amenity", "operator.type", "operator", 
+                                "addr.postcode", "website", "geometry"),
+                              names(university_points_filtered))
+  
+  university_points_clean <- university_points_filtered %>%
+    select(all_of(available_cols)) %>%
+    mutate(university_type = "point")
+} else {
+  university_points_clean <- sf::st_sf(data.frame(), crs = st_crs(athens_districts))
+}
+```
+
+```{r process-polygons}
+# Process university polygons if they exist - convert to centroids
+if (!is.null(university_polygons) && nrow(university_polygons) > 0) {
+  # Check if operator:type column exists and filter accordingly
+  if ("operator:type" %in% names(university_polygons)) {
+    university_polygons_filtered <- university_polygons %>%
+      filter(is.na(`operator:type`) | `operator:type` == "public" | `operator:type` == "university" | `operator:type` == "government") %>%
+      st_intersection(athens_districts)
+  } else {
+    # If operator:type doesn't exist, include all university
+    university_polygons_filtered <- university_polygons %>%
+      st_intersection(athens_districts)
+  }
+  
+  # Select only columns that exist
+  available_cols <- intersect(c("osm_id", "name", "amenity", "operator.type", "operator", 
+                                "addr.postcode", "website", "geometry"),
+                              names(university_polygons_filtered))
+  
+  university_polygons_clean <- university_polygons_filtered %>%
+    select(all_of(available_cols)) %>%
+    st_centroid() %>%
+    mutate(university_type = "polygon_centroid")
+} else {
+  university_polygons_clean <- sf::st_sf(data.frame(), crs = st_crs(athens_districts))
+}
+```
+
+```{r combine-and-deduplicate}
+# Combine points and polygons if both exist
+if (nrow(university_points_clean) > 0 && nrow(university_polygons_clean) > 0) {
+  # Ensure both have same columns
+  common_cols <- intersect(names(university_points_clean), names(university_polygons_clean))
+  
+  athens_university <- bind_rows(
+    university_points_clean[common_cols],
+    university_polygons_clean[common_cols]
+  )
+} else if (nrow(university_points_clean) > 0) {
+  athens_university <- university_points_clean
+} else if (nrow(university_polygons_clean) > 0) {
+  athens_university <- university_polygons_clean
+} else {
+  athens_university <- sf::st_sf(data.frame(), crs = st_crs(athens_districts))
+}
+```
+
+```{r remove-duplicates}
+# Remove universities that are very close to each other (within 100 meters)
+# First filter out NA names, then apply proximity filtering to points and polygon centroids separately
+if (nrow(athens_university) > 0) {
+  # First step: Remove rows where name is NA
+  athens_university_no_na <- athens_university %>%
+    filter(!is.na(name))
+  
+  # Check if we still have data after NA filtering
+  if (nrow(athens_university_no_na) > 0) {
+    # Separate points and polygon centroids
+    university_points <- athens_university_no_na %>%
+      filter(university_type == "point")
+    
+    university_polygons <- athens_university_no_na %>%
+      filter(university_type == "polygon_centroid")
+    
+    # Apply proximity filtering only to points
+    if (nrow(university_points) > 0) {
+      # Create distance matrix for points only
+      point_dist_matrix <- st_distance(university_points)
+      
+      # Find points within 100m of each other
+      point_close_pairs <- which(point_dist_matrix < units::set_units(100, "m") & 
+                             upper.tri(point_dist_matrix, diag = FALSE), arr.ind = TRUE)
+      
+      # If there are close pairs, keep only one from each pair
+      if (nrow(point_close_pairs) > 0) {
+        # Keep the first university point from each close pair
+        to_remove <- unique(point_close_pairs[,2])
+        university_points_filtered <- university_points[-to_remove, ]
+      } else {
+        university_points_filtered <- university_points
+      }
+    } else {
+      university_points_filtered <- university_points
+    }
+    
+    # Apply proximity filtering only to polygons
+    if (nrow(university_polygons) > 0) {
+      # Create distance matrix for polygons only
+      poly_dist_matrix <- st_distance(university_polygons)
+      
+      # Find polygons within 100m of each other
+      poly_close_pairs <- which(poly_dist_matrix < units::set_units(100, "m") & 
+                             upper.tri(poly_dist_matrix, diag = FALSE), arr.ind = TRUE)
+      
+      # If there are close pairs, keep only one from each pair
+      if (nrow(poly_close_pairs) > 0) {
+        # Keep the first university from each close pair
+        to_remove <- unique(poly_close_pairs[,2])
+        university_polygons_filtered <- university_polygons[-to_remove, ]
+      } else {
+        university_polygons_filtered <- university_polygons
+      }
+    } else {
+      university_polygons_filtered <- university_polygons
+    }
+    
+    # Combine filtered points with filtered polygon centroids
+    if (nrow(university_points_filtered) > 0 && nrow(university_polygons_filtered) > 0) {
+      athens_university_final <- bind_rows(university_points_filtered, university_polygons_filtered)
+    } else if (nrow(university_points_filtered) > 0) {
+      athens_university_final <- university_points_filtered
+    } else if (nrow(university_polygons_filtered) > 0) {
+      athens_university_final <- university_polygons_filtered
+    } else {
+      # Create empty sf object if no data remains
+      athens_university_final <- st_sf(
+        geometry = st_sfc(crs = st_crs(athens_districts))
+      )
+    }
+  } else {
+    # No data left after NA filtering
+    athens_university_final <- st_sf(
+      geometry = st_sfc(crs = st_crs(athens_districts))
+    )
+  }
+} else {
+  # No initial data
+  athens_university_final <- st_sf(
+    geometry = st_sfc(crs = st_crs(athens_districts))
+  )
+}
+```
+
+```{r summary-stats}
+# Print summary statistics
+cat("Total university found:", nrow(athens_university_final), "\n")
+if (nrow(athens_university_final) > 0) {
+  cat("university by type:\n")
+  print(table(athens_university_final$university_type, useNA = "ifany"))
+  
+  cat("\nuniversity by operator type:\n")
+  print(table(athens_university_final$operator.type, useNA = "ifany"))
+  
+  cat("\nuniversity with names:", sum(!is.na(athens_university_final$name)), "\n")
+}
+```
+
+```{r display-results}
+# Display the first few university with key information
+if (nrow(athens_university_final) > 0) {
+  # Select only columns that exist
+  display_cols <- intersect(c("osm_id", "name", "amenity", "operator", "operator.type", 
+                              "addr.postcode", "website", "school_type"),
+                            names(athens_university_final))
+  
+  athens_university_display <- athens_university_final %>%
+    st_drop_geometry() %>%
+    select(all_of(display_cols)) %>%
+    head(10)
+  
+  print(athens_university_display)
+}
+```
+
+```{r create-map, fig.width=10, fig.height=8}
+# Create a simple map of the university (all are now points)
+if (nrow(athens_university_final) > 0) {
+  # Transform to WGS84 for leaflet
+  university_wgs84 <- st_transform(athens_university_final, 4326)
+  
+  # Create different colors for original points vs polygon centroids
+  colors <- ifelse(university_wgs84$university_type == "point", "blue", "red")
+  
+  # Create map
+  university_map <- leaflet(university_wgs84) %>%
+    addTiles() %>%
+    addCircleMarkers(
+      color = colors,
+      radius = 6,
+      popup = ~paste0(
+        "<b>", ifelse(is.na(name), "Unnamed university", name), "</b><br>",
+        "Type: ", university_type, "<br>",
+        "Operator: ", ifelse(is.na(operator), "Unknown", operator), "<br>",
+        "Address: ", 
+        if("addr:street" %in% names(university_wgs84)) {
+          ifelse(is.na(`addr:street`), "", 
+                 paste(`addr:street`, 
+                       ifelse("addr:housenumber" %in% names(university_wgs84) & !is.na(`addr:housenumber`), 
+                              `addr:housenumber`, ""), sep = " "))
+        } else {
+          "No address info"
+        }
+      )
+    ) %>%
+    addLegend(
+      "bottomright",
+      colors = c("blue", "red"),
+      labels = c("Original Point", "Polygon Centroid"),
+      title = "university Type"
+    )
+  
+  university_map
+}
+```
+
+```{r save-data}
+# Save the final dataset
+if (nrow(athens_university_final) > 0) {
+  
+  # Create CSV with specific columns including x,y coordinates
+  athens_university_table <- athens_university_final %>%
+    # Extract coordinates
+    mutate(
+      x = st_coordinates(.)[,1],
+      y = st_coordinates(.)[,2]
+    ) %>%
+    st_drop_geometry() %>%
+    # Select only the requested columns
+    select(osm_id, name, amenity, operator, addr.postcode, x, y)
+  
+  write.csv(athens_university_table, "Data/potential cooling centres/athens_university.csv", row.names = FALSE)
+  
+  cat("Data saved as athens_university.rds and athens_university.csv\n")
+  cat("CSV contains columns: osm_id, name, amenity, operator, addr.postcode, x, y\n")
+}
+```

@@ -1,0 +1,256 @@
+```{r setup, message=FALSE, warning=FALSE}
+# Load required museum
+library(osmdata)
+library(sf)
+library(dplyr)
+library(leaflet)
+library(ggplot2)
+```
+
+```{r get boundary shape and box}
+## create rectangular boundary box based on vienna districts polygon
+vienna_bbox <- st_bbox(vienna_districts)
+
+## visual check if bounding box and actual shape overlap
+# Bounding Box as Polygon (as required by ggplot)
+bbox_polygon <- st_as_sfc(vienna_bbox)
+
+# Plot 
+ggplot() +
+  # Bounding Box as red dashed rectangular
+  geom_sf(data = bbox_polygon, 
+          color = "red", 
+          fill = "transparent", 
+          linewidth = 2,
+          linetype = "dashed") +
+  # Vienna districts as blue polygons
+  geom_sf(data = vienna_districts, 
+          color = "blue", 
+          fill = "lightblue", 
+          alpha = 0.5,
+          linewidth = 0.8) +
+  # Title 
+  ggtitle("Vienna Districts (blue) and OpenStreetMap Bounding Box (red)") +
+   # Show coordinates
+  coord_sf(crs = st_crs(vienna_districts)) +
+  # Design
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, hjust = 0.5),
+    plot.caption = element_text(size = 10, hjust = 0.5),
+    axis.text = element_text(size = 8)
+  )
+```
+
+```{r get-osm-data}
+# Get OSM library data within Vienna bbox
+vienna_museum_query <- opq(bbox = vienna_bbox) %>%
+  add_osm_feature(key = "tourism", value = "museum") %>%
+  osmdata_sf()
+
+# Extract points and polygons
+museum_points <- vienna_museum_query$osm_points
+museum_polygons <- vienna_museum_query$osm_polygons
+
+# Check what columns are available (for debugging)
+if (!is.null(museum_points) && nrow(museum_points) > 0) {
+  cat("Available columns in museum_points:\n")
+  print(names(museum_points))
+}
+
+if (!is.null(museum_polygons) && nrow(museum_polygons) > 0) {
+  cat("Available columns in museum_polygons:\n")
+  print(names(museum_polygons))
+}
+```
+
+```{r process-points}
+# Process museum points if they exist
+if (!is.null(museum_points) && nrow(museum_points) > 0) {
+  # Include all museums that intersect with districts
+    museum_points_filtered <- museum_points %>%
+      st_intersection(vienna_districts)
+  
+  # Select only columns that exist
+  available_cols <- intersect(c("osm_id", "name", "tourism", "operator.type", "operator", 
+                                "addr.postcode", "website", "opening_hours", "geometry"),
+                              names(museum_points_filtered))
+  
+  museum_points_clean <- museum_points_filtered %>%
+    select(all_of(available_cols)) %>%
+    mutate(museum_type = "point")
+} else {
+  museum_points_clean <- sf::st_sf(data.frame(), crs = st_crs(vienna_districts))
+}
+```
+
+```{r process-polygons}
+# Process museum polygons if they exist - convert to centroids
+if (!is.null(museum_polygons) && nrow(museum_polygons) > 0) {
+    # Include all museums that intersect with vienna districts
+    museum_polygons_filtered <- museum_polygons %>%
+      st_intersection(vienna_districts)
+  
+  # Select only columns that exist
+  available_cols <- intersect(c("osm_id", "name", "tourism", "operator.type", "operator", 
+                                "addr.postcode", "website", "opening_hours", "geometry"),
+                              names(museum_polygons_filtered))
+  
+  museum_polygons_clean <- museum_polygons_filtered %>%
+    select(all_of(available_cols)) %>%
+    st_centroid() %>%
+    mutate(museum_type = "polygon_centroid")
+} else {
+  museum_polygons_clean <- sf::st_sf(data.frame(), crs = st_crs(vienna_districts))
+}
+```
+
+```{r combine-and-deduplicate}
+# Combine points and polygons if both exist
+if (nrow(museum_points_clean) > 0 && nrow(museum_polygons_clean) > 0) {
+  # Ensure both have same columns
+  common_cols <- intersect(names(museum_points_clean), names(museum_polygons_clean))
+  
+  vienna_museum <- bind_rows(
+    museum_points_clean[common_cols],
+    museum_polygons_clean[common_cols]
+  )
+} else if (nrow(museum_points_clean) > 0) {
+  vienna_museum <- museum_points_clean
+} else if (nrow(museum_polygons_clean) > 0) {
+  vienna_museum <- museum_polygons_clean
+} else {
+  vienna_museum <- sf::st_sf(data.frame(), crs = st_crs(vienna_districts))
+}
+```
+
+```{r remove-duplicates}
+# Remove museums that are very close to each other (within 100 meters)
+# First filter out NA names, then apply proximity filtering
+if (nrow(vienna_museum) > 0) {
+  # First step: Remove rows where name is NA
+  vienna_museum_no_na <- vienna_museum %>%
+    filter(!is.na(name))
+  
+  # Check if we still have data after NA filtering
+  if (nrow(vienna_museum_no_na) > 0) {
+    # All geometries are now points, so we can directly calculate distances
+    # Create distance matrix
+    dist_matrix <- st_distance(vienna_museum_no_na)
+    
+    # Find museums within 100m of each other
+    close_pairs <- which(dist_matrix < units::set_units(100, "m") & 
+                           upper.tri(dist_matrix, diag = FALSE), arr.ind = TRUE)
+    
+    # If there are close pairs, keep only one from each pair
+    if (nrow(close_pairs) > 0) {
+      # Keep the first museum from each close pair
+      to_remove <- unique(close_pairs[,2])
+      vienna_museum_final <- vienna_museum_no_na[-to_remove, ]
+    } else {
+      vienna_museum_final <- vienna_museum_no_na
+    }
+  } else {
+    # No data left after NA filtering - create empty sf object
+    vienna_museum_final <- st_sf(
+      geometry = st_sfc(crs = st_crs(vienna_districts))
+    )
+  }
+} else {
+  # No initial data - create empty sf object
+  vienna_museum_final <- st_sf(
+    geometry = st_sfc(crs = st_crs(vienna_districts))
+  )
+}
+```
+
+```{r summary-stats}
+# Print summary statistics
+cat("Total museum found:", nrow(vienna_museum_final), "\n")
+if (nrow(vienna_museum_final) > 0) {
+  cat("museum by type:\n")
+  print(table(vienna_museum_final$museum_type, useNA = "ifany"))
+ 
+  cat("\nmuseum with names:", sum(!is.na(vienna_museum_final$name)), "\n")
+}
+```
+
+```{r display-results}
+# Display the first few museum with key information
+if (nrow(vienna_museum_final) > 0) {
+  # Select only columns that exist
+  display_cols <- intersect(c("osm_id", "name", "tourism", "operator", "operator.type", 
+                              "addr.postcode", "website", "opening_hours", "museum_type"),
+                            names(vienna_museum_final))
+  
+  vienna_museum_display <- vienna_museum_final %>%
+    st_drop_geometry() %>%
+    select(all_of(display_cols)) %>%
+    head(10)
+  
+  print(vienna_museum_display)
+}
+```
+
+```{r create-map, fig.width=10, fig.height=8}
+# Create a simple map of the museum (all are now points)
+if (nrow(vienna_museum_final) > 0) {
+  # Transform to WGS84 for leaflet
+  museum_wgs84 <- st_transform(vienna_museum_final, 4326)
+  
+  # Create different colors for original points vs polygon centroids
+  colors <- ifelse(museum_wgs84$museum_type == "point", "blue", "red")
+  
+  # Create map
+  museum_map <- leaflet(museum_wgs84) %>%
+    addTiles() %>%
+    addCircleMarkers(
+      color = colors,
+      radius = 6,
+      popup = ~paste0(
+        "<b>", ifelse(is.na(name), "Unnamed museum", name), "</b><br>",
+        "Type: ", museum_type, "<br>",
+        "Operator: ", ifelse(is.na(operator), "Unknown", operator), "<br>",
+        "Address: ", 
+        if("addr:street" %in% names(museum_wgs84)) {
+          ifelse(is.na(`addr:street`), "", 
+                 paste(`addr:street`, 
+                       ifelse("addr:housenumber" %in% names(museum_wgs84) & !is.na(`addr:housenumber`), 
+                              `addr:housenumber`, ""), sep = " "))
+        } else {
+          "No address info"
+        }
+      )
+    ) %>%
+    addLegend(
+      "bottomright",
+      colors = c("blue", "red"),
+      labels = c("Original Point", "Polygon Centroid"),
+      title = "Museum Type"
+    )
+  
+  museum_map
+}
+```
+
+```{r save-data}
+# Save the final dataset
+if (nrow(vienna_museum_final) > 0) {
+  
+  # Create CSV with specific columns including x,y coordinates
+  vienna_museum_table <- vienna_museum_final %>%
+    # Extract coordinates
+    mutate(
+      x = st_coordinates(.)[,1],
+      y = st_coordinates(.)[,2]
+    ) %>%
+    st_drop_geometry() %>%
+    # Select only the requested columns
+    select(osm_id, name, tourism, operator, addr.postcode, x, y)
+  
+  write.csv(vienna_museum_table, "Data/potential cooling centres/vienna_museum.csv", row.names = FALSE)
+  
+  cat("Data saved as vienna_museum.rds and vienna_museum.csv\n")
+  cat("CSV contains columns: osm_id, name, tourism, operator, addr.postcode, x, y\n")
+}
+```
