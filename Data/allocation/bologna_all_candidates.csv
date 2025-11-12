@@ -1,0 +1,255 @@
+osm_id;name;operator;operator.type;community_centre;x;y;facility_category;addr.postcode;social_facility;social_facility.for
+295521061;Ludoteca Just Play Bologna;Circolo Arci Sputnik Tom;association;NA;11.3561809;44.546216;community_centre;NA;NA;NA
+3939514123;DLF - Gruppo Fermodellistico Bolognese;NA;NA;club_home;11.3542618;44.5060971;community_centre;NA;NA;NA
+4523646090;Polisportiva Lame;NA;NA;NA;11.3273155;44.522888;community_centre;NA;NA;NA
+4810013826;Eureka;NA;NA;NA;11.3293696;44.5140473;community_centre;NA;NA;NA
+12013419921;Casa di Quartiere Fondo Comini;NA;NA;NA;11.3418168;44.5154623;community_centre;NA;NA;NA
+12472145602;Circolo Hex;ARCI;NA;NA;11.3472301;44.5141898;community_centre;NA;NA;NA
+3368077939;Associazione Portico delle Parole;NA;NA;NA;11.3354544;44.4925186;community_centre;NA;NA;NA
+9884010445;Casa di Quartiere Saffi;NA;NA;NA;11.3302837;44.5024678;community_centre;NA;NA;NA
+11921551712;Centro Sociale 2 Agosto 1980;NA;NA;NA;11.3214179;44.490486;community_centre;NA;NA;NA
+11981283553;Casa di Quartiere Giorgio Costa;NA;NA;NA;11.3351803;44.5016107;community_centre;NA;NA;NA
+12520643687;Casa di Quartiere Tolmino;Comune di Bologna;public;NA;11.317991;44.4977495;community_centre;NA;NA;NA
+12710150844;Centro Sociale della Pace;NA;NA;NA;11.3317573;44.4957108;community_centre;NA;NA;NA
+1704242540;Villa Pini;NA;NA;NA;11.387561;44.4993584;community_centre;NA;NA;NA
+4512718873;Circolo Arci Guernelli;ARCI;NA;social_centre;11.3558066;44.5042698;community_centre;NA;NA;NA
+10299458412;"Casa di Quartiere ""Scipione dal Ferro""";NA;NA;NA;11.3708136;44.4962334;community_centre;NA;NA;NA
+10822361926;Casa di Quartiere Nello Frassinetti;Comune di Bologna;public;NA;11.3738479;44.5036412;community_centre;NA;NA;NA
+11211909378;Casalone - RitmoLento;ARCI;NA;youth_centre social_centre;11.3772068;44.5075781;community_centre;NA;NA;NA
+11498162880;Casa di Quartiere Pilastro;NA;NA;NA;11.398106;44.5139793;community_centre;NA;NA;NA
+11908047383;Casa di Quartiere Croce del Biacco;NA;NA;NA;11.3982335;44.4900638;community_centre;NA;NA;NA
+12752259679;Casa di Quartiere Italicus;Comune di Bologna;public;NA;11.3573228;44.504062;community_centre;NA;NA;NA
+5951039787;Làbas;NA;NA;NA;11.3544348;44.493594;community_centre;NA;NA;NA
+9752891762;Ciclofficina Popolare Ampio Raggio;NA;NA;NA;11.3561745;44.4846143;community_centre;NA;NA;NA
+10059579906;SPLIT - Spazio Per Liberare Il Tempo;NA;NA;NA;11.3558517;44.4959282;community_centre;NA;NA;NA
+12522656711;Casa di Quartiere Villa Mazzacorati;NA;NA;NA;11.3696804;44.4698527;community_centre;NA;NA;NA
+150991745;Casa di quartiere Rosa Marchi;NA;NA;NA;11.29063147;44.49285936;community_centre;NA;NA;NA
+149048688;Casa di Quartiere Montanari;NA;NA;social_centre;11.35076208;44.51331276;community_centre;NA;NA;NA
+149114100;Casa di Quartiere Casa Gialla;Comune di Bologna;government;NA;11.32704131;44.52077643;community_centre;NA;NA;NA
+1126565264;Casa di Quartiere Katia Bertasi;NA;NA;NA;11.3402545;44.51133347;community_centre;NA;NA;NA
+148747352;Cassero LGBTQIA+ Center;NA;NA;NA;11.33517144;44.5028628;community_centre;NA;NA;NA
+149870826;Casa Gialla;NA;NA;youth_centre;11.39371565;44.51131965;community_centre;NA;NA;NA
+254368278;Vag61 Spazio Libero Autogestito;NA;NA;NA;11.3616745;44.50015244;community_centre;NA;NA;NA
+150826224;Centro Sociale Foscherara;Ancescao;NA;NA;11.3791907;44.4650261;community_centre;NA;NA;NA
+11073703458;"Biblioteca ""Orlando Pezzoli""";Biblioteche Bologna;public;NA;11.2963554;44.5022769;library;NA;NA;NA
+11073703459;Biblioteca Borgo Panigale - Miriam Ridolfi;Biblioteche Bologna;public;NA;11.2654653;44.5229552;library;NA;NA;NA
+8995754101;Biblioteca Lame - Cesare Malservisi;Biblioteche Bologna;public;NA;11.3297195;44.5184653;library;NA;NA;NA
+9754829307;Biblioteca ENEA di Bologna;ENEA;government;NA;11.3443725;44.5255037;library;NA;NA;NA
+9767338334;Biblioteca Dario Nobili;Area Territoriale della Ricerca del CNR di Bologna;public;NA;11.3390081;44.5222792;library;NA;NA;NA
+12749814934;Biblioteca Corticella Luigi Fabbri;Biblioteche Bologna;public;NA;11.3597174;44.5461688;library;NA;NA;NA
+419369013;Biblioteca Oriano Tassinari Clò;Biblioteche Bologna;public;NA;11.3151025;44.4872982;library;NA;NA;NA
+1735448479;Biblioteca Renzo Renzi;NA;NA;NA;11.3347494;44.5026588;library;NA;NA;NA
+3786662011;"Biblioteca della salute mentale e delle scienze umane ""Minguzzi - Gentili""";Istituzione Gian Franco Minguzzi della Città metropolitana di Bologna e Università di Bologna;public;NA;11.3303837;44.4932314;library;NA;NA;NA
+9884010452;Aula studio Borges;NA;NA;NA;11.3273629;44.505037;library;NA;NA;NA
+11051615178;Istituto storico Parri;Biblioteche Bologna;government;NA;11.33385;44.4934909;library;NA;NA;NA
+11338072272;biblioteca Spagna;NA;NA;NA;11.3393355;44.4908571;library;NA;NA;NA
+11534163701;"Biblioteca di strada ""Lorenzo Brogioni""";NA;NA;NA;11.3273778;44.4910438;library;NA;NA;NA
+13048684285;Biblioteca San Genesio;NA;NA;NA;11.3123606;44.4892709;library;NA;NA;NA
+9031478242;Sala Studio Prometeo;Prometeo;NA;NA;11.3575979;44.4927467;library;NA;NA;NA
+9767139108;Biblioteca agenzia sanitaria e sociale regionale (regione Emilia-Romagna);Agenzia sanitaria e sociale regionale regione Emilia-Romagna;government;NA;11.3589928;44.510037;library;NA;NA;NA
+9767283685;Biblioteca dell'Assemblea Legislativa della Regione Emilia Romagna;Assemblea Legislativa della Regione Emilia Romagna;government;NA;11.3655695;44.5075654;library;NA;NA;NA
+9819412185;Biblioteca Centralizzata IRCCS Azienda Ospedaliero-Universitaria di Bologna;Servizio sanitario dell'Emilia Romagna;public;NA;11.3638571;44.4902351;library;NA;NA;NA
+9849872491;Biblioteca Istituto Nazionale di Geofisica e Vulcanologia;Istituto Nazionale di Geofisica e Vulcanologia - INGV;public;NA;11.3567214;44.500628;library;NA;NA;NA
+882558065;Dipartimento di Scienze Farmaceutiche;NA;NA;NA;11.3535141;44.4957057;library;NA;NA;NA
+3790680081;Biblioteca del Conservatorio Statale di Musica Gian Battista Martini;NA;NA;NA;11.3492047;44.4951516;library;NA;NA;NA
+5370321861;Centro italiano di Documentazione Speleologica - Biblioteca Franco Anelli;Società Speleologica Italiana;NA;NA;11.3550353;44.4977254;library;NA;NA;NA
+9779740498;Salaborsa Lab;Biblioteche Bologna;public;NA;11.3544851;44.4937757;library;NA;NA;NA
+9880886176;Biblioteca Fondazione Gramsci ER;NA;NA;NA;11.3474839;44.4974042;library;NA;NA;NA
+9884010753;Fondazione Federico Zeri;Università di Bologna;NA;NA;11.3553467;44.4880643;library;NA;NA;NA
+10243252469;Biblioteca Amilcar Cabral;Biblioteche Bologna;public;NA;11.3393723;44.4841629;library;NA;NA;NA
+11073703457;Biblioteca di Casa Carducci;Biblioteche Bologna;public;NA;11.3573668;44.4882776;library;NA;NA;NA
+11078422555;Biblioteca del Museo Civico del Risorgimento;Museo civico del risorgimento;public;NA;11.3443521;44.4929994;library;NA;NA;NA
+149040656;Biblioteca Casa di Khaoula;Biblioteche Bologna;public;NA;11.34752201;44.52009268;library;NA;NA;NA
+150252882;Biblioteca Jorge Luis Borges;Biblioteche Bologna;public;NA;11.32833629;44.50238229;library;NA;NA;NA
+149870877;Biblioteca Luigi Spina;Biblioteche Bologna;public;NA;11.39462378;44.51110402;library;NA;NA;NA
+149872998;Biblioteca Scandellara - Mirella Bartolotti;Biblioteche Bologna;public;NA;11.38332648;44.49684599;library;NA;NA;NA
+1230063602;Biblioteca Walter Bigiavi;NA;NA;NA;11.35181184;44.49763058;library;NA;NA;NA
+845432733;Biblioteca Natalia Ginzburg;Biblioteche Bologna;public;NA;11.39184092;44.47413498;library;NA;NA;NA
+6586689111;Ducati Museum;NA;NA;NA;11.2684316;44.5161578;museum;NA;NA;NA
+12820385347;Museo del flipper;Tilt!;NA;NA;11.2955983;44.5045749;museum;40133;NA;NA
+1625182354;Deposito Collezione Storica ATC;NA;NA;NA;11.3493895;44.5067948;museum;NA;NA;NA
+1704110513;Museo del Patrimonio Industriale;Istituzione Bologna Musei;NA;NA;11.3345856;44.521713;museum;40131;NA;NA
+2089000043;San Colombano - Collezione Tagliavini;NA;NA;NA;11.3407983;44.4967333;museum;NA;NA;NA
+3952848995;"Museo della Comunicazione G. Pelagalli ""Mille voci... mille suoni""";NA;NA;NA;11.320008;44.5008834;museum;40131;NA;NA
+4143527701;Palazzo Albergati;NA;NA;NA;11.3344125;44.4899426;museum;NA;NA;NA
+4777114494;Museo Spazio Pubblico;City Space Architecture, Genius Saeculi;NA;NA;11.3137575;44.4908718;museum;40134;NA;NA
+4995664468;Museo Civico Medievale;Comune di Bologna;NA;NA;11.3420561;44.4962748;museum;NA;NA;NA
+5264787982;"Museo del tessuto e della tappezzeria ""Vittorio Zironi""";NA;NA;NA;11.3152983;44.4879987;museum;NA;NA;NA
+8565503584;Museo del Basket Italiano (in costruzione);Comune di Bologna;NA;NA;11.3326582;44.5001919;museum;NA;NA;NA
+11105019280;Collezioni Comunali d'Arte;Settore Musei Civici Bologna;NA;NA;11.3420947;44.4943525;museum;40121;NA;NA
+11405297305;Museo di San Giuseppe;NA;NA;NA;11.3263409;44.4893202;museum;NA;NA;NA
+12842244380;Cesare Tartarini;NA;NA;NA;11.3287659;44.4973144;museum;NA;NA;NA
+12842604119;Raccolta Lercaro;NA;NA;NA;11.3375785;44.4987097;museum;40122;NA;NA
+12871424159;Museo archeologico all'aperto della Cirenaica;NA;NA;NA;11.3638437;44.4956903;museum;NA;NA;NA
+12941365737;"Museo e giardino Geologico ""Sandra Forni""";Regione Emilia-Romagna;NA;NA;11.3669078;44.5082963;museum;40127;NA;NA
+655135676;Museo di Palazzo Poggi;Università di Bologna;NA;NA;11.3525987;44.4966137;museum;NA;NA;NA
+1627309137;Museo Carducci;NA;NA;NA;11.3573451;44.4881292;museum;NA;NA;NA
+1704237892;"Museo di Mineralogia ""Luigi Bombicci""";Università di Bologna;NA;NA;11.3554439;44.4981949;museum;40126;NA;NA
+1704239999;Museo Ebraico di Bologna;NA;NA;NA;11.3479363;44.4958974;museum;40126;NA;NA
+1704278528;Museo civico d'arte industriale Davia Bargellini;NA;NA;NA;11.3519428;44.4922564;museum;40125;NA;NA
+1704566220;Museo Morandi;NA;NA;NA;11.3551263;44.4892498;museum;40125;NA;NA
+2084530114;Museo della Storia di Bologna;NA;NA;NA;11.346619;44.4925888;museum;NA;NA;NA
+2084530115;Casa Saraceni;NA;NA;NA;11.3460897;44.4913721;museum;NA;NA;NA
+5766091963;Collezione di Fisica dell’Università di Bologna;Università di Bologna;NA;NA;11.3538236;44.4993704;museum;40126;NA;NA
+8388269517;Museo di San Petronio;NA;NA;NA;11.3434719;44.4931759;museum;NA;NA;NA
+11944717336;La Quadreria di Palazzo Rossi Poggi Marsili;NA;NA;NA;11.3443068;44.497433;museum;NA;NA;NA
+12570612954;Museo Missionario d'Arte Cinese e Museo dell'Osservanza;NA;NA;NA;11.32598;44.4808856;museum;NA;NA;NA
+5569025202;"Museo storico del Soldatino ""M. Massacesi""";NA;NA;NA;11.3699802;44.4697277;museum;40141;NA;NA
+149048911;Museo per la Memoria di Ustica;NA;NA;NA;11.35034623;44.51338112;museum;NA;NA;NA
+148803275;Palazzo Pallavicini;NA;NA;NA;11.33446226;44.49657077;museum;NA;NA;NA
+154393440;Ca' Croce;NA;NA;NA;11.31538997;44.42193783;museum;NA;NA;NA
+407963403;Serra Lodi;NA;NA;NA;11.35299135;44.50013935;museum;NA;NA;NA
+150827757;Museo memoriale della libertà;NA;NA;NA;11.40297371;44.47876258;museum;NA;NA;NA
+343128726;IIS Belluzzi Fioravanti;NA;NA;NA;11.2850536;44.4895019;school;NA;NA;NA
+12647094685;School Maker Day;School Maker Day;NA;NA;11.3063313;44.5084029;school;NA;NA;NA
+1623545764;Istituto Maria Ausiliatrice;NA;NA;NA;11.3499331;44.5075681;school;40128;NA;NA
+1623545765;Istituto Beata Vergine di San Luca;NA;NA;NA;11.3481476;44.5078027;school;40128;NA;NA
+1623615453;Scuola Elementare Acri;NA;NA;NA;11.3467276;44.5166775;school;NA;NA;NA
+1623615492;Scuola Elementare Grosso;NA;NA;NA;11.3385321;44.5196263;school;NA;NA;NA
+6134617932;"Liceo Linguistico Internazionale ""C. Boldrini""";NA;NA;NA;11.3426058;44.5134669;school;40129;NA;NA
+11498872178;Scuola primaria Dozza;NA;NA;NA;11.3655957;44.5292005;school;40128;NA;NA
+11998791937;Scuola Primaria Longhena;NA;NA;NA;11.307466;44.4773195;school;40135;NA;NA
+11073552165;Scuola Primaria Romagnoli;NA;NA;NA;11.3930527;44.5090135;school;40127;NA;NA
+11073552189;Scuola Secondaria di I grado Saffi;NA;public;NA;11.3921421;44.5100872;school;NA;NA;NA
+11883282587;Scuola Primaria Scandellara;NA;public;NA;11.3845455;44.4970189;school;40138;NA;NA
+11883285070;Scuola Secondaria di I Grado Jacopo della Quercia - Plesso B;NA;public;NA;11.3851831;44.4982097;school;40138;NA;NA
+4319225326;Scuola Primaria Giosué Carducci;NA;NA;NA;11.3546433;44.4868228;school;NA;NA;NA
+5943436238;Pingu's English School;NA;NA;NA;11.3686284;44.4844765;school;NA;NA;NA
+6288814102;My English School;NA;NA;NA;11.3730492;44.4838203;school;NA;NA;NA
+9881506855;"Liceo Artistico ""F. Arcangeli""";NA;NA;NA;11.3487289;44.4893679;school;40124;NA;NA
+938279319;Scuola dell'infanzia Domenico Scarlatti;NA;NA;NA;11.3723518;44.4677161;school;NA;NA;NA
+1704330914;Nido d'infanzia comunale Cavazzoni;NA;NA;NA;11.3836912;44.4691679;school;40139;NA;NA
+1704382720;Scuola d'infanzia comunale Walt Disney;NA;NA;NA;11.3837615;44.4676489;school;40139;NA;NA
+2652863200;Pavese;TPER;NA;NA;11.3601732;44.4506289;school;NA;NA;NA
+279810423;Scuola secondaria di I grado Alessandro Volta;NA;public;NA;11.26782212;44.52307842;school;40132;NA;NA
+304594642;Scuola Steineriana Maria Garagnani;NA;NA;NA;11.25717425;44.5015255;school;NA;NA;NA
+444648948;Scuola d'infanzia Seragnoli;NA;NA;NA;11.29660692;44.50574285;school;NA;NA;NA
+444949467;Scuola Primaria De Vigri;NA;NA;NA;11.30373571;44.51160947;school;40133;NA;NA
+445043454;Scuola Elementare Cesana;NA;NA;NA;11.29888105;44.49264364;school;40133;NA;NA
+465774605;Scuola Giovanni XXIII - Istituto Comprensivo 1;NA;NA;NA;11.28523037;44.49758847;school;NA;NA;NA
+476040879;Scuola Elementare XXV Aprile;NA;NA;NA;11.28875497;44.48848289;school;NA;NA;NA
+690220794;Scuola d'infanzia Mazzini;NA;NA;NA;11.26539194;44.52235484;school;NA;NA;NA
+867529934;Scuola dell'Infanzia Fantini;NA;NA;NA;11.29300962;44.49137269;school;NA;NA;NA
+872941927;Scuola Materna Villa May;NA;NA;NA;11.27665513;44.51484523;school;NA;NA;NA
+1092915809;Scuola Primaria S. Giuseppe;NA;NA;NA;11.27737351;44.5012504;school;NA;NA;NA
+1167524990;Scuola dell'Infanzia Futura;NA;NA;NA;11.29782839;44.49908597;school;40133;NA;NA
+1187349371;Scuola Primaria Lipparini;NA;NA;NA;11.27445448;44.52081743;school;NA;NA;NA
+1187349372;Scuola d'infanzia e Primaria Sacro Cuore;NA;NA;NA;11.27575021;44.51961045;school;NA;NA;NA
+1187349378;Scuola d'infanzia Casa Del Bosco;NA;NA;NA;11.28514031;44.5107347;school;NA;NA;NA
+1187349379;Scuola Primaria Fiorini;NA;NA;NA;11.29041614;44.51145949;school;NA;NA;NA
+1187349392;Scuola d'infanzia e Primaria Adolfo Albertazzi;NA;NA;NA;11.30635389;44.50444616;school;NA;NA;NA
+1196779334;"Scuola Primaria ""Due Agosto""";NA;NA;NA;11.27722628;44.50643011;school;NA;NA;NA
+1196779358;Asilo Nido Acquerello;NA;NA;NA;11.27800918;44.50741391;school;NA;NA;NA
+1292305734;Scuola Primaria Giorgio Morandi;NA;public;NA;11.29092629;44.49332156;school;40133;NA;NA
+1392092616;Scuola d’infanzia Gallon;NA;NA;NA;11.26854105;44.5200942;school;NA;NA;NA
+27040870;Istituti Aldini Valeriani e Sirani;NA;NA;NA;11.34629445;44.52234523;school;NA;NA;NA
+149114111;Scuola  Materna Ada Zucchelli;NA;NA;NA;11.32194183;44.52386649;school;NA;NA;NA
+149546349;Scuola primaria Casaralta;NA;NA;NA;11.35191421;44.51640354;school;40128;NA;NA
+149546350;Scuola Media Statale Zappa;NA;NA;NA;11.35235823;44.52327785;school;40128;NA;NA
+150818344;Istituto Tecnico Commerciale Statale Rosa Luxemburg;NA;NA;NA;11.31071217;44.51450853;school;NA;NA;NA
+485532077;Scuola d'Infanzia Fresu;NA;NA;NA;11.35820108;44.53953203;school;NA;NA;NA
+1181405401;Scuola secondaria di I grado Testoni Fioravanti;NA;NA;NA;11.34577107;44.51253059;school;40129;NA;NA
+1184196510;Scuola Elementare Federzoni;NA;NA;NA;11.344573;44.50798168;school;NA;NA;NA
+1196827375;Scuola Elementare Bottego;NA;public;NA;11.33004569;44.52073414;school;NA;NA;NA
+1197037170;Istituto Professionale Malpighi - sede distaccata;NA;public;NA;11.32808548;44.51806461;school;40131;NA;NA
+1241681108;Istituto Tecnico Agrario Arrigo Serpieri;NA;NA;NA;11.36694571;44.55005089;school;40128;NA;NA
+1242039498;Liceo Scientifico Statale Albert Bruce Sabin;NA;NA;NA;11.34750373;44.50690331;school;NA;NA;NA
+1243307338;Istituto Professionale Edile di Bologna;NA;NA;NA;11.36949702;44.53279538;school;NA;NA;NA
+1284736056;Istituto Comprensivo n. 4;NA;NA;NA;11.36158415;44.54535557;school;NA;NA;NA
+1291060022;Scuola Elementare Silvani;NA;NA;NA;11.32473647;44.52468082;school;NA;NA;NA
+1291296482;Scuola Secondaria di I grado Salvo d'Acquisto;NA;NA;NA;11.3303633;44.52219454;school;NA;NA;NA
+1370290796;Scuola Primaria Marsili;NA;NA;NA;11.35579034;44.5486637;school;NA;NA;NA
+1412274178;Scuola d'infanzia Girotondo;NA;NA;NA;11.3564673;44.54222851;school;NA;NA;NA
+1415902621;Scuola d'infanzia Marsili;NA;NA;NA;11.35875031;44.5451901;school;NA;NA;NA
+325449413;Istituto Maestre Pie dell'Addolorata;NA;NA;NA;11.32155437;44.49751213;school;40131;NA;NA
+325457397;IPSAS Aldrovandi Rubbiani - Succursale indirizzo Moda;NA;NA;NA;11.32720713;44.49658102;school;40134;NA;NA
+325459243;Liceo Marcello Malpighi;Fondazione San Pellegrino;NA;NA;11.32972765;44.49477493;school;NA;NA;NA
+325532341;Liceo Augusto Righi - Succursale;NA;NA;NA;11.31764054;44.49769298;school;40131;NA;NA
+325532352;Maria Ausiliatrice;NA;NA;NA;11.31347567;44.49487001;school;NA;NA;NA
+325533094;Scuola d'infanzia Arco Guidi;NA;NA;NA;11.3115317;44.4933448;school;NA;NA;NA
+325723619;Scuola Primaria Luigi Bombicci;ISTITUTO COMPRENSIVO - I.C. N.8 VIA CA' SELVATICA;government;NA;11.32197034;44.49122065;school;40134;NA;NA
+562445140;Scuola Secondaria 1° Malpighi;NA;NA;NA;11.32688105;44.49154362;school;NA;NA;NA
+846957488;Liceo scientifico Augusto Righi;NA;NA;NA;11.3300472;44.4915837;school;NA;NA;NA
+868460461;Scuola Secondaria I grado Fabrizio De Andrè;NA;public;NA;11.31683042;44.50054051;school;NA;NA;NA
+1169861670;Scuola d'infanzia XXI Aprile 1945;NA;NA;NA;11.31481806;44.49152761;school;NA;NA;NA
+1187608961;Scuola d'infanzia H.C. Andersen;NA;NA;NA;11.32769003;44.50063428;school;NA;NA;NA
+1187608962;IC Gandino Guidi;NA;NA;NA;11.33098566;44.50013518;school;NA;NA;NA
+1187608964;Scuola Primaria Manzolini;NA;NA;NA;11.33374454;44.49322627;school;NA;NA;NA
+1187608970;IPSAS Aldrovandi Rubbiani;NA;NA;NA;11.33904506;44.50098978;school;40122;NA;NA
+1187613134;Liceo Marco Minghetti;NA;NA;NA;11.33874405;44.49691438;school;NA;NA;NA
+1192369139;Liceo Marco Minghetti - Succursale;NA;NA;NA;11.33697395;44.49124487;school;40123;NA;NA
+1354397104;Liceo Laura Bassi;NA;NA;NA;11.33223235;44.49445849;school;NA;NA;NA
+259931747;Scuole Elementari Mattiuzzi-Casali;NA;NA;NA;11.37357275;44.48710468;school;NA;NA;NA
+259935228;"Liceo scietifico statale ""Enrico Fermi""";NA;NA;NA;11.37282004;44.48487206;school;40139;NA;NA
+1072578744;Polo d'Infanzia Rodari;NA;NA;NA;11.37438869;44.50400279;school;NA;NA;NA
+1073527892;Scuola Primaria Garibaldi;NA;NA;NA;11.37264736;44.50037617;school;40127;NA;NA
+1073527894;Scuola Primaria Gualandi;NA;NA;NA;11.36643745;44.50315469;school;40127;NA;NA
+1188355156;Scuola Primaria Il Pellicano;NA;NA;NA;11.36753466;44.49746966;school;NA;NA;NA
+1225002431;Scuola Primaria Don Minzoni;NA;government;NA;11.37943666;44.50773211;school;40127;NA;NA
+1283395456;Scuola Primaria Livio Tempesta;NA;NA;NA;11.39870857;44.49085791;school;40138;NA;NA
+74381946;Scuola elementare Don Milani;NA;NA;NA;11.37298297;44.4798977;school;NA;NA;NA
+327466530;Kinder College;Kinder International School Bologna;NA;NA;11.32498857;44.48083191;school;NA;NA;NA
+500486005;Liceo Arcangeli;NA;NA;NA;11.3632186;44.47638866;school;NA;NA;NA
+589515549;Istituto Comprensivo Clotilde Tambroni;NA;NA;NA;11.36875667;44.47416487;school;NA;NA;NA
+822462755;Istituto Farlottine San Tommaso;NA;NA;NA;11.36781925;44.47251456;school;NA;NA;NA
+855156194;Scuola Secondaria 1° Irnerio;NA;NA;NA;11.34933897;44.50249615;school;NA;NA;NA
+1078201535;Scuola Secondaria 1° Guido Reni;NA;government;NA;11.35437632;44.49288002;school;NA;NA;NA
+1136562176;Scuola primaria Adele Cremonini Ongaro;NA;NA;NA;11.33831088;44.48069773;school;NA;NA;NA
+1178362875;Istituto San Giuseppe;NA;NA;NA;11.36347462;44.48123268;school;NA;NA;NA
+1178617176;Scuola Elementare Marconi;NA;NA;NA;11.36833271;44.48268731;school;40137;NA;NA
+1183751809;Liceo Arcangeli - succursale;NA;NA;NA;11.36407739;44.47474661;school;NA;NA;NA
+1185268422;Scuola Primaria Fortuzzi;NA;NA;NA;11.35013439;44.48261359;school;40136;NA;NA
+253834635;Istituto Comprensivo n. 12;NA;NA;NA;11.38593489;44.48805037;school;NA;NA;NA
+260883952;Istituto Farlottine;NA;NA;NA;11.38059491;44.46716616;school;NA;NA;NA
+270305422;Istituto Comprensivo 13;NA;NA;NA;11.36882779;44.45933105;school;40141;NA;NA
+871482257;IIS Manfredi Tanari;NA;NA;NA;11.38585631;44.48999104;school;NA;NA;NA
+1186091948;Scuola Secondaria di I grado Guercino;NA;NA;NA;11.38581549;44.46768369;school;NA;NA;NA
+1190460447;Scuola Primaria Gian Paolo Costa;NA;NA;NA;11.37958224;44.4725534;school;40100;NA;NA
+1191220054;Scuola Primaria Raffaello Sanzio;NA;NA;NA;11.37819683;44.4650006;school;40141;NA;NA
+1195609789;Scuola secondaria di I grado Rita Levi Montalcini;NA;NA;NA;11.38125;44.47519845;school;40139;NA;NA
+1279650696;Scuole San Domenico Savio;NA;NA;NA;11.39567823;44.47819051;school;NA;NA;NA
+12531978616;CSRR Battindarno;NA;NA;NA;11.2962414;44.5015702;social_centre;40133;nursing_home;disabled
+9280304209;Casa delle donne per non subire violenza;NA;NA;NA;11.3636014;44.4971158;social_centre;NA;shelter;woman
+11498162881;Centro diurno I Tulipani;NA;NA;NA;11.3979812;44.5137322;social_centre;NA;day_care;senior
+12620552251;Pronto soccorso sociale;NA;NA;NA;11.3603949;44.50488;social_centre;NA;shelter;underprivileged
+1136569482;Casa residenza Villa Ranuzzi;NA;NA;NA;11.26896691;44.49343023;social_centre;NA;nursing_home;NA
+1195354619;Casa residenza per anziani Saliceto;NA;NA;NA;11.35363792;44.52512335;social_centre;NA;nursing_home;senior
+9755639072;Dipartimento di Fisica e Astronomia - Settore Astrofisica;Università di Bologna;public;NA;11.3367617;44.5218209;university;NA;NA;NA
+9755639073;"Laboratori Dipartimento di Chimica ""G. Ciamician""";Università di Bologna;public;NA;11.3360968;44.5209218;university;NA;NA;NA
+9995473379;CIRSFID;Università di Bologna;university;NA;11.3419242;44.4972985;university;NA;NA;NA
+10871250939;"Istituto di Psichiatria ""Paolo Ottonello""";NA;NA;NA;11.3291641;44.4934814;university;NA;NA;NA
+1704247370;Laboratorio Ranzani;Università di Bologna;NA;NA;11.3586029;44.5016769;university;40127;NA;NA
+3241481866;"Dipartimento di Fisica e Astronomia ""Augusto Righi""";Università di Bologna;NA;NA;11.3570108;44.5003029;university;40127;NA;NA
+3464977114;Facoltà di Agraria;NA;NA;NA;11.405893;44.5137558;university;NA;NA;NA
+3979367433;Laboratori di Cancerologia;Università di Bologna;NA;NA;11.357534;44.4950717;university;NA;NA;NA
+9879633184;Dipartimento di Farmacia e Biotecnologie;Università di Bologna;university;NA;11.3580727;44.4986315;university;NA;NA;NA
+411366245;Aula Absidale di Santa Lucia;NA;NA;NA;11.3482842;44.4898123;university;40124;NA;NA
+1625924206;Dipartimento di Scienze Politiche e Sociali;Università di Bologna;public;NA;11.3541437;44.4911422;university;40125;NA;NA
+1627376986;CUSB - Centro Universitario Sportivo Bologna;NA;NA;NA;11.3554382;44.4962153;university;NA;NA;NA
+1627376995;"Dipartimento di Chimica ""G. Ciamician""";Università di Bologna;NA;NA;11.3541888;44.4965361;university;NA;NA;NA
+1627377003;Plesso di Geologia e Paleontologia;Università di Bologna;NA;NA;11.3557399;44.4976069;university;40126;NA;NA
+1704277275;Dipartimento di Scienze Statistiche;NA;NA;NA;11.3521478;44.4976748;university;40126;NA;NA
+1704277932;Dipartimento di Farmacia e Biotecnologie;NA;NA;NA;11.3531442;44.4998428;university;40126;NA;NA
+1704548781;Bologna Business School;NA;NA;NA;11.3466042;44.4668156;university;40136;NA;NA
+9872497703;Dipartimento di Scienze Aziendali;Università di Bologna;NA;NA;11.3475438;44.5000075;university;40126;NA;NA
+9879633180;Dipartimento di Scienze Giuridiche;Università di Bologna;NA;NA;11.3490545;44.4957603;university;40126;NA;NA
+10304161306;Laboratorio di Ingegneria Nucleare;Università di Bologna;NA;NA;11.3287515;44.4633784;university;40136;NA;NA
+11405785198;Aule San Petronio Vecchio;Università di Bologna;university;NA;11.3531344;44.4899497;university;NA;NA;NA
+11405792944;UniBO - Sede di Geografia;Università di Bologna;university;NA;11.3512282;44.4907466;university;40124;NA;NA
+60828440;Università di Bologna - Plesso Bertalia-Lazzaretto;Università di Bologna;university;NA;11.31997125;44.51377284;university;NA;NA;NA
+1189512368;Azienda Sperimentale Sant'Anna;Università di Bologna;public;NA;11.38468732;44.54724163;university;NA;NA;NA
+378227146;Dipartimento di Filosofia e Comunicazione - Comunicazione;Università di Bologna;NA;NA;11.33751286;44.5009487;university;NA;NA;NA
+1034074503;Plesso Risorgimento;Alma Mater Studiorum - Università di Bologna;public;NA;11.32914549;44.48882028;university;40136;NA;NA
+1078074014;Dipartimento delle Arti - DAMSLab;Università di Bologna;NA;NA;11.33513504;44.50235652;university;NA;NA;NA
+305358153;Università di Bologna - Plesso Ranzani;NA;NA;NA;11.35895406;44.50143574;university;NA;NA;NA
+848097944;Ex Bodoniana - Dipartimento di Farmacia e Biotecnologie;Università di Bologna;university;NA;11.35847932;44.49881344;university;NA;NA;NA
+1068102786;Plesso Fanin;NA;NA;NA;11.40672511;44.51451;university;NA;NA;NA
+1076597733;Università di Bologna - Plesso Berti Pichat;NA;NA;NA;11.35707537;44.50068629;university;NA;NA;NA
+148752946;Sede di Mineralogia;NA;NA;NA;11.35518919;44.498165;university;NA;NA;NA
+148832791;Università di Bologna - Facoltà di Lingue e Letterature Straniere - Presidenza;NA;NA;NA;11.35532488;44.50033862;university;NA;NA;NA
+312338026;San Giovanni in Monte;NA;NA;NA;11.34809636;44.49044713;university;NA;NA;NA
+1034074503;Plesso Risorgimento;Alma Mater Studiorum - Università di Bologna;public;NA;11.32935176;44.48781978;university;40136;NA;NA
+1078070029;Dipartimento di Arti Visive;Università di Bologna;NA;NA;11.35489657;44.48829843;university;NA;NA;NA
+1188671864;DIBINEM - sede di malattie odontostomatologiache e Chirurgia maxillo-facciale;Università di Bologna;university;NA;11.35393843;44.49362027;university;40125;NA;NA
+1191934220;Plesso Hercolani - UniBo;Università di Bologna;public;NA;11.35352593;44.49039095;university;NA;NA;NA
+1354402225;Johns Hopkins University;NA;NA;NA;11.35585465;44.49481599;university;40126;NA;NA

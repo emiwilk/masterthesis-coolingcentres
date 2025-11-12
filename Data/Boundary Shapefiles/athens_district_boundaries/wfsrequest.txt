@@ -1,0 +1,1 @@
+http://gis.cityofathens.gr/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Adimotikes_koinotites1&outputFormat=SHAPE-ZIP&srs=EPSG%3A2100&format_options=charset%3AUTF-8

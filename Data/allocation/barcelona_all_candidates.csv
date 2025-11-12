@@ -1,0 +1,673 @@
+"osm_id","name","operator","operator.type","community_centre","community_centre.for","addr.postcode","x","y","facility_category","social_facility","social_facility.for"
+1464238734,"Casal de Barri Can Rectoret",NA,NA,NA,NA,8017,2.0983784,41.4289822,"community_centre",NA,NA
+1716858622,"El Petit Drac",NA,NA,NA,"child",NA,2.1229148,41.4001321,"community_centre",NA,NA
+11494042869,"Mercat Cultural Vallvidrera",NA,NA,NA,NA,NA,2.1042939,41.4137619,"community_centre",NA,NA
+4214857590,"Kagyu Samye Dzong Barcelona",NA,NA,NA,NA,8041,2.1744134,41.4195479,"community_centre",NA,NA
+6909488685,"Centre Juvenil Martí Codolar",NA,NA,NA,"juvenile",NA,2.1510048,41.4279401,"community_centre",NA,NA
+6971093885,"Casal infantil Guinardó",NA,NA,NA,"child",NA,2.1719128,41.4169066,"community_centre",NA,NA
+7479659594,"Casal de Joves Girapells",NA,NA,NA,"juvenile",NA,2.179026,41.4193761,"community_centre",NA,NA
+8212431917,"Ludoteca El Galliner",NA,NA,"youth_centre","child",NA,2.1622475,41.4303571,"community_centre",NA,NA
+9267302319,"Casal infantil l'Ànec",NA,NA,NA,"child",NA,2.1594852,41.4161454,"community_centre",NA,NA
+10857688806,"El Casalet",NA,NA,NA,NA,NA,2.1657907,41.4162551,"community_centre",NA,NA
+3087310117,"La Negreta",NA,NA,NA,NA,8002,2.1776729,41.3788418,"community_centre",NA,NA
+4548205725,"El Lokal","Autogestionat","association",NA,NA,8001,2.1670851,41.3793948,"community_centre",NA,NA
+4726582800,"RAI - Recusos d'Animació Intercultural",NA,NA,NA,NA,NA,2.1800931,41.386153,"community_centre",NA,NA
+4859449976,"Associació de Jubilats i Pensionistes APB",NA,NA,NA,"senior",8039,2.1884855,41.3748276,"community_centre",NA,NA
+5536001407,"Centre Sant Pere Apòstol",NA,NA,NA,NA,NA,2.1763524,41.388262,"community_centre",NA,NA
+5887404889,"Centre Cívic Drassanes",NA,NA,NA,NA,8001,2.1728488,41.3776003,"community_centre",NA,NA
+9073113210,"Casal de Joves Autogestionat de Ciutat Vella",NA,NA,"social_centre",NA,NA,2.174722,41.3853567,"community_centre",NA,NA
+10278344099,"Ateneu Enciclopèdic Popular",NA,NA,NA,NA,8010,2.1685787,41.3760234,"community_centre",NA,NA
+11311374038,"Antiga Massana",NA,NA,"social_centre",NA,NA,2.1705781,41.3810367,"community_centre",NA,NA
+11443027469,"Casal dels Infants Raval",NA,NA,NA,"juvenile",NA,2.1714813,41.3797047,"community_centre",NA,NA
+11913216269,"Utópia BCN",NA,NA,NA,NA,NA,2.1752056,41.3825884,"community_centre",NA,NA
+13034159608,"FELLA - Federació d'Estudis Llibertaris i Anarcosindicalistes",NA,NA,NA,NA,8001,2.1660417,41.3824337,"community_centre",NA,NA
+3135713403,"Panteres Grogues",NA,NA,NA,"lgbtq",NA,2.1588913,41.384426,"community_centre",NA,NA
+4876690923,"Racó de Cultura de Sant Antoni",NA,NA,NA,NA,NA,2.1588263,41.3783735,"community_centre",NA,NA
+5909309466,"Espai 210","Ajuntament de Barcelona",NA,NA,NA,8013,2.1797617,41.403893,"community_centre",NA,NA
+6087336872,"Centre Cívic Sagrada Familia",NA,NA,NA,NA,NA,2.1763142,41.4057351,"community_centre",NA,NA
+6254166226,"Centro Cultural do Brasil em Barcelona",NA,NA,NA,NA,8007,2.1651352,41.3915323,"community_centre",NA,NA
+7528323185,"Club d'Escacs Torrenegra",NA,NA,"club_home",NA,NA,2.1751503,41.4014422,"community_centre",NA,NA
+8263616417,"Espai de fotografia Francesc Català Roca",NA,NA,NA,NA,NA,2.1495888,41.3768692,"community_centre",NA,NA
+9532576817,"Centre de Serveis Socials Fort Pienc",NA,NA,NA,NA,NA,2.1800874,41.3938096,"community_centre",NA,NA
+11178259937,"Espai d'entitats Fort Pienc",NA,NA,NA,NA,NA,2.1839042,41.3957089,"community_centre",NA,NA
+11380922869,"Espai Línia. La Casa dels Barris",NA,NA,"cultural_centre",NA,NA,2.172626,41.3938477,"community_centre",NA,NA
+11422441969,"Espai Veinal Calabria 66",NA,NA,NA,NA,NA,2.1570138,41.3783552,"community_centre",NA,NA
+12880400101,"Espai Social. Fundació Catalunya La Pedrera",NA,NA,NA,NA,NA,2.1579738,41.3810899,"community_centre",NA,NA
+3334240181,"Ateneu Llibertari de Sants",NA,NA,NA,NA,8014,2.137953,41.3730671,"community_centre",NA,NA
+3471091743,"CSA Can Vies",NA,NA,NA,NA,8014,2.1345762,41.3740908,"community_centre",NA,NA
+3471101050,"Espai Obert",NA,NA,NA,NA,NA,2.1302626,41.3788286,"community_centre",NA,NA
+4234626390,"Centre Cívic La Cadena",NA,NA,NA,NA,8038,2.13889,41.3640691,"community_centre",NA,NA
+4546359012,"Ateneu Cooperatiu La Base",NA,NA,NA,NA,NA,2.1670614,41.3727957,"community_centre",NA,NA
+6341210187,"Centre cultural de port",NA,NA,NA,"juvenile",NA,2.1440013,41.3567504,"community_centre",NA,NA
+6450036171,"Espai Familiar Casa Colors",NA,NA,NA,NA,NA,2.1433331,41.3546513,"community_centre",NA,NA
+8221753218,"Casal jove la marina",NA,NA,NA,"juvenile",NA,2.1396558,41.3654954,"community_centre",NA,NA
+9935122517,"Grup Mineralògic Català",NA,NA,"club",NA,NA,2.1333065,41.3739966,"community_centre",NA,NA
+9935212422,"Espai d'adolescents La Clau",NA,NA,NA,"yongers",8014,2.1465316,41.3743459,"community_centre",NA,NA
+10137430518,"Espai Jove la Bàscula",NA,NA,NA,"juvenile",NA,2.1453397,41.3587456,"community_centre",NA,NA
+10285074709,"Circ Can Batlló","Can Batlló - Espai veïnal autogestionat",NA,NA,"senior;athlete;girl;boy;disabled;student;family;man;homosexual;immigrant;juvenile;lgbtq;woman;multigeneration",8014,2.1404605,41.3707395,"community_centre",NA,NA
+10967400409,"Esplai Xerinola",NA,NA,NA,"child",NA,2.1642043,41.3716156,"community_centre",NA,NA
+10982051505,"Punt d'informació juvenil. Punt Multimèdia FAB Casa del Mig",NA,NA,NA,NA,NA,2.1405115,41.3769161,"community_centre",NA,NA
+12895298601,"Associació de Veïns Poble Sec",NA,NA,NA,NA,NA,2.1635999,41.3735072,"community_centre",NA,NA
+11187415437,"Espai d'adolescents Jovecardí",NA,NA,NA,"juvenile",NA,2.1239326,41.379379,"community_centre",NA,NA
+429353161,"Kasa de la Muntanya","Kasa de la Muntanya",NA,NA,NA,NA,2.1532115,41.4113735,"community_centre",NA,NA
+1368518028,"Casal d'Avis Montmany",NA,NA,NA,NA,NA,2.1591324,41.4050578,"community_centre",NA,NA
+1454018533,"Casal d'Avis de Penitents","Ajuntament de Barcelona",NA,NA,NA,NA,2.1402939,41.4201196,"community_centre",NA,NA
+5626136021,"Centre Cultural Popular La Violeta","Ajuntament de Barcelona","public",NA,NA,8012,2.1562181,41.4009765,"community_centre",NA,NA
+6126724138,"Centre de Recursos per a les dones",NA,NA,NA,"juvenile",NA,2.1601768,41.4115708,"community_centre",NA,NA
+6898609747,"AAVV Penitents Teixonera",NA,NA,NA,NA,NA,2.141093,41.4211475,"community_centre",NA,NA
+11339533452,"Cercle",NA,NA,NA,NA,NA,2.1530376,41.4036707,"community_centre",NA,NA
+11603224549,"Piccolo Cirkus",NA,NA,NA,NA,NA,2.1591353,41.4028257,"community_centre",NA,NA
+11900365169,"Casal Siracusa",NA,NA,NA,"senior",NA,2.1596552,41.4013619,"community_centre",NA,NA
+11967079886,"Katla Casa Nórdica",NA,NA,NA,NA,NA,2.1554266,41.4043771,"community_centre",NA,NA
+12491955703,"Vallcarca i els Penitents. Espai d'Entitats",NA,NA,NA,NA,NA,2.1454988,41.4113299,"community_centre",NA,NA
+13034201902,"Banc Expropiat",NA,NA,NA,NA,8012,2.1621893,41.4025257,"community_centre",NA,NA
+1854110335,"Associació de Veïns Trinitat Nova",NA,NA,NA,NA,NA,2.1845735,41.4479746,"community_centre",NA,NA
+5906019394,"Ateneu la Bòbila de Porta",NA,NA,NA,NA,NA,2.1770862,41.4336791,"community_centre",NA,NA
+6128869158,"Centre d'Educació Ambiental",NA,NA,NA,NA,NA,2.1763512,41.4513687,"community_centre",NA,NA
+6232772316,"Casal Infantil Vilapicina-Torre Llobeta",NA,NA,NA,"juvenile",NA,2.1776007,41.4285647,"community_centre",NA,NA
+6875199486,"Casal de gent gran Turó de la Peira",NA,NA,NA,"senior",NA,2.1730711,41.4328005,"community_centre",NA,NA
+6875768103,"Epai Social de Salut Comunitària Guineueta",NA,NA,NA,NA,NA,2.1659512,41.4395298,"community_centre",NA,NA
+7023202785,"Casal de Gent Gran Pau Casals",NA,NA,NA,"senior",NA,2.1620926,41.4420253,"community_centre",NA,NA
+7078016967,"Casal de Barri Torre Baró",NA,NA,NA,NA,NA,2.1808948,41.4595303,"community_centre",NA,NA
+9215914018,"Casal Infantil de la Trinitat Nova",NA,NA,NA,"child",NA,2.1849308,41.4508177,"community_centre",NA,NA
+9377162420,"Centre Cívic Ca n'Ensenya",NA,NA,NA,NA,NA,2.169559,41.4376024,"community_centre",NA,NA
+10983596007,"Espai Jove les Basses",NA,NA,NA,"juvenile",NA,2.1686632,41.4309382,"community_centre",NA,NA
+10983611005,"Casal infantil Turó de la Peira",NA,NA,NA,"juvenile",NA,2.1713603,41.4314993,"community_centre",NA,NA
+12508868602,"Banc del Moviment. Xarxa solidària",NA,NA,NA,NA,NA,2.1818695,41.4388634,"community_centre",NA,NA
+12645046701,"Associació Civicosocial de la Guineueta",NA,NA,NA,NA,NA,2.172646,41.4388319,"community_centre",NA,NA
+598792330,"la Cinètika",NA,NA,NA,NA,8030,2.188017,41.4303043,"community_centre",NA,NA
+5953419988,"So Tofu",NA,NA,NA,NA,NA,2.2063618,41.4302296,"community_centre",NA,NA
+6232760657,"Centre Cívic Can Clariana Cultural",NA,NA,NA,NA,NA,2.1784215,41.4275588,"community_centre",NA,NA
+7529139415,"Centre Obert Joan Bosco",NA,NA,NA,"child",NA,2.1860897,41.4182506,"community_centre",NA,NA
+7663721774,"Centre de Cultura Popular Sant Andreu",NA,NA,NA,NA,NA,2.1877125,41.4406602,"community_centre",NA,NA
+10883027105,"Agrupament Escolta i Guia Gregal",NA,NA,NA,"juvenile",NA,2.1875109,41.4316887,"community_centre",NA,NA
+1934456469,"Casal de Barri Diagonal Mar","Ajuntament de Barcelona",NA,NA,NA,8019,2.2108461,41.4078457,"community_centre",NA,NA
+1934456470,"Casal de Barri Bac de Roda Poblenou",NA,NA,NA,NA,NA,2.2034686,41.4064328,"community_centre",NA,NA
+2601187745,"Ateneu del Clot",NA,NA,NA,NA,8026,2.1885084,41.4108672,"community_centre",NA,NA
+5245581246,"Casal de barri. Besos",NA,NA,NA,NA,NA,2.2144856,41.4168294,"community_centre",NA,NA
+5414514237,"La Formiga Martinenca",NA,NA,NA,NA,NA,2.184504,41.4100579,"community_centre",NA,NA
+5453986021,"Casal per a gent gran La Verneda",NA,NA,NA,"senior",NA,2.2011088,41.4203117,"community_centre",NA,NA
+6032619463,"Novart",NA,NA,"art",NA,8026,2.1859045,41.4087319,"community_centre",NA,NA
+6860551104,"Centre Cultural Islàmic Català",NA,NA,NA,NA,8018,2.1884844,41.4088389,"community_centre",NA,NA
+7547281075,"Associació Veins Verneda Alta",NA,NA,NA,NA,NA,2.2026795,41.4246279,"community_centre",NA,NA
+7556742387,"Espai Caixa",NA,NA,NA,"senior",NA,2.2007365,41.4013124,"community_centre",NA,NA
+8046554586,"Atlètic Poblenou",NA,NA,"club_home",NA,NA,2.2000776,41.4000836,"community_centre",NA,NA
+8062015490,"Icaria agrupació excursionista",NA,NA,"club_home",NA,NA,2.2015946,41.400435,"community_centre",NA,NA
+8121182007,"L'anónima. Casal popular Independentista",NA,NA,NA,NA,NA,2.1885009,41.4068247,"community_centre",NA,NA
+9980273018,"Unió Excursionista Sant Martí de Provençals",NA,NA,NA,NA,NA,2.1963938,41.4153262,"community_centre",NA,NA
+10044088617,"Atlètic Poblenou",NA,NA,NA,NA,NA,2.1992707,41.4028383,"community_centre",NA,NA
+10882919305,"Casal de Barri Espai Antoni Miró Peris",NA,NA,NA,NA,NA,2.1844778,41.4129098,"community_centre",NA,NA
+10926005716,"Casal de Barri La Palmera",NA,NA,NA,NA,NA,2.2060835,41.4205217,"community_centre",NA,NA
+11348369929,"BiciHub",NA,NA,NA,NA,NA,2.1923347,41.3957383,"community_centre",NA,NA
+12224032101,"Espai Via Trajana. Associació de veïns i veïnes Verneda Via Trajana.",NA,NA,NA,NA,NA,2.2044488,41.4286966,"community_centre",NA,NA
+12301408176,"AKASHA Hub Barcelona","Akasha Barcelona",NA,NA,NA,8018,2.1910454,41.4110134,"community_centre",NA,NA
+170591412,"Casal Electric",NA,NA,NA,NA,NA,2.09100452695737,41.4284286341983,"community_centre",NA,NA
+224518879,"Casa Sagnier",NA,NA,NA,"juvenile",NA,2.14394607832234,41.4021270435844,"community_centre",NA,NA
+450579409,"El Kubo",NA,NA,NA,NA,NA,2.13293649313288,41.4071574156935,"community_centre",NA,NA
+650189054,"Espai infantil El parc",NA,NA,NA,"juvenile",NA,2.12201824212108,41.3935114673586,"community_centre",NA,NA
+133728062,"Centre Cívic Casa Groga",NA,NA,NA,NA,NA,2.13661680109285,41.4264940084845,"community_centre",NA,NA
+264732252,"Casal de Gent Gran Vall d'Hebron",NA,NA,NA,"senior",NA,2.14689128744128,41.4323927539423,"community_centre",NA,NA
+679727191,"Institut Mèdic Pedagògic",NA,NA,NA,"disabled",NA,2.16795308014172,41.4169788076126,"community_centre",NA,NA
+721245876,"Espai Cultural de Montbau","Ajuntament de Barcelona Districte d'Horta-Guinardó",NA,NA,NA,NA,2.14006166163789,41.429890077738,"community_centre",NA,NA
+724065724,"Associació de Veïns i Veïnes de Montbau",NA,NA,"club_home",NA,NA,2.141362222436,41.4322754113311,"community_centre",NA,NA
+740437080,"Torre Jussana. Centre de Serveis a les Associacions",NA,NA,NA,NA,NA,2.15197200185095,41.4294836516461,"community_centre",NA,NA
+992232142,"Centre Social Font del Gos",NA,NA,"community_hall",NA,8035,2.1493750121445,41.4413211845417,"community_centre",NA,NA
+770887437,"Espai de gent gran Sant Antoni",NA,NA,NA,"senior",NA,2.16302054902041,41.3779054261164,"community_centre",NA,NA
+817682151,"La Casa Groga. Espai juvenil del Fort Pienc",NA,NA,NA,"juvenile",NA,2.18575208387319,41.3969854252069,"community_centre",NA,NA
+842677163,"Casal de Joves Esquerra de l'Eixample",NA,NA,NA,NA,NA,2.14562520204187,41.3857586010993,"community_centre",NA,NA
+217478676,"AVV El Polvorí",NA,NA,NA,NA,NA,2.14260878517067,41.3643351513519,"community_centre",NA,NA
+217498203,"Can Batlló",NA,NA,NA,NA,NA,2.13697343698813,41.3683883070119,"community_centre",NA,NA
+458106182,"Bloc 9. Pistes esportives",NA,NA,NA,NA,NA,2.13537854378239,41.3686943149577,"community_centre",NA,NA
+620606811,"Estació de la Magòria","Generalitat de Catalunya",NA,NA,NA,NA,2.14214963371479,41.3701462830959,"community_centre",NA,NA
+647461900,"Casa del Rellotge",NA,NA,NA,NA,NA,2.14157557053174,41.3580564762606,"community_centre",NA,NA
+249406039,"Espai d'entitats Cristalleries Planell",NA,NA,NA,NA,NA,2.13204407853441,41.3874843186824,"community_centre",NA,NA
+802177328,"Centre Heura",NA,NA,NA,NA,8023,2.14770367753413,41.4081892501221,"community_centre",NA,NA
+1200007652,"Jardí del Silenci",NA,NA,NA,NA,NA,2.16093479399024,41.4065464404062,"community_centre",NA,NA
+157016134,"Can Masdeu",NA,NA,NA,NA,NA,2.15747694717958,41.4457559211876,"community_centre",NA,NA
+641995435,"Casal de Barri de Vallbona",NA,NA,NA,NA,NA,2.18594735040853,41.4642448011552,"community_centre",NA,NA
+666513168,"Ateneu Popular 9 Barris",NA,NA,NA,NA,NA,2.18024884140522,41.4488205284078,"community_centre",NA,NA
+713153255,"Casal de Gent Gran Can Peguera",NA,NA,NA,"senior",NA,2.16465837545781,41.4340333146158,"community_centre",NA,NA
+1203948060,"Casal de Joves de la Prosperitat",NA,NA,NA,"juvenile",NA,2.18365578356369,41.4398009373603,"community_centre",NA,NA
+507528182,"Espai 30 (Ateneu Sagrerenc)","Associació Cultural Espai 30",NA,NA,NA,NA,2.19023931116855,41.4200126136826,"community_centre",NA,NA
+509202018,"Cansal gent gran Bon Pastor",NA,NA,NA,"senior",NA,2.20286814664074,41.4385514706964,"community_centre",NA,NA
+638772465,"Centre Cultural Federica Montseny",NA,NA,NA,NA,NA,2.18916757694089,41.4542023341651,"community_centre",NA,NA
+680673975,"Casal de Gent Gran Bascònia",NA,NA,NA,NA,NA,2.18738130442025,41.4361071030698,"community_centre",NA,NA
+693576424,"L'ateneu de Sant Andreu",NA,NA,NA,NA,NA,2.18528405436294,41.4323208459843,"community_centre",NA,NA
+1347404704,"Centre de Vida Comunitària de Trinitat Vella",NA,NA,NA,NA,NA,2.18907571053021,41.4478735084226,"community_centre",NA,NA
+220244130,"Espai Municipal Can Miralletes",NA,NA,NA,NA,NA,2.1789152484807,41.413950444345,"community_centre",NA,NA
+418422467,"ELI la Clandestina",NA,NA,NA,NA,NA,2.17663501966472,41.4118477466793,"community_centre",NA,NA
+432385346,"Centre Civic Besós",NA,NA,NA,NA,NA,2.21161528075426,41.4164063264168,"community_centre",NA,NA
+433859984,"casal de barri La Verneda. Ludoteca",NA,NA,NA,NA,NA,2.19693701301812,41.422801483386,"community_centre",NA,NA
+471774346,"Casal de Barri Villa Olimpica. Can Gili Nou",NA,NA,NA,NA,NA,2.20074965121257,41.3952313542925,"community_centre",NA,NA
+510718448,"Trueta 200. Espai per a la inclusió de joves amb autisme",NA,NA,NA,"juvenile",NA,2.20280331723612,41.3978416392063,"community_centre",NA,NA
+512072202,"Casal de Joves del Poblenou - Can Ricart",NA,NA,NA,"juvenile",NA,2.19953672002355,41.4080470125723,"community_centre",NA,NA
+648188441,"Centre Residencial d'Inserció Masia de Can Planas",NA,NA,NA,"disabled",8020,2.19601203184713,41.4211559972287,"community_centre",NA,NA
+683856016,"Associació de Veins Sant Martí",NA,NA,NA,NA,NA,2.20270596010813,41.4164579155358,"community_centre",NA,NA
+1001065022,"Casan infaltil El Drac",NA,NA,NA,"child",NA,2.20640242655834,41.4271594395322,"community_centre",NA,NA
+6165767814,"Arxiu Maragall",NA,NA,NA,NA,8006,2.1470994,41.4005781,"library",NA,NA
+5182120246,"CRAI Biblioteca del Campus de Mundet","Universitat de Barcelona",NA,NA,NA,NA,2.1441534,41.4387281,"library",NA,NA
+10312658213,"Lllibreria papereria Grama",NA,NA,NA,NA,NA,2.1545269,41.4260695,"library",NA,NA
+12183576601,"Josep Laporte",NA,NA,NA,NA,NA,2.1768527,41.413697,"library",NA,NA
+192086704,"Biblioteca de Catalunya",NA,NA,NA,NA,NA,2.1695118,41.3810089,"library",NA,NA
+2544935010,"Arxiu Històric de la Ciutat de Barcelona",NA,NA,NA,NA,NA,2.1756666,41.3840852,"library",NA,NA
+4392354371,"Biblioteca Francesca Bonnemaison",NA,NA,NA,NA,NA,2.1761718,41.386556,"library",NA,NA
+4707063538,"Biblioteca Balmes",NA,NA,NA,NA,NA,2.1744138,41.3856687,"library",NA,NA
+9867822150,"SEDAC Biblioteca de l'Ajuntament de Barcelona","Ajuntament de Barcelona",NA,NA,NA,NA,2.177336,41.3820491,"library",NA,NA
+1206798748,"Biblioteca Sagrada Família-Josep M. Ainaud de Lasarte","Diputació de Barcelona",NA,NA,NA,NA,2.1763365,41.405752,"library",NA,NA
+1962716248,"Biblioteca Arús",NA,NA,NA,NA,8009,2.1787798,41.3928277,"library",NA,NA
+2500570197,"Biblioteca de Matemàtiques","Universitat de Barcelona",NA,NA,NA,NA,2.1637223,41.3871391,"library",NA,NA
+5484158325,"Biblioteca Escola Administracio Publica",NA,NA,NA,NA,NA,2.1758183,41.3916487,"library",NA,NA
+4345963156,"Biblioteca Popular Josep Pons","Can Batlló",NA,NA,NA,8014,2.1370468,41.3691102,"library",NA,NA
+11545745569,"Biblioteca Jacques Dupin",NA,NA,NA,NA,NA,2.1601416,41.3686529,"library",NA,NA
+3005930147,"Biblioteca de Física i Química",NA,NA,NA,NA,NA,2.1164904,41.3848925,"library",NA,NA
+3005939829,"Biblioteca de Geologia",NA,NA,NA,NA,NA,2.120188,41.3845515,"library",NA,NA
+3063271397,"Centre de Documentació de Medi Ambient","Universitat de Barcelona;Departament de Territori i Sostenibilitat",NA,NA,NA,8028,2.1197808,41.3858675,"library",NA,NA
+5741365556,"Biblioteca de la FME",NA,NA,NA,NA,8028,2.1158099,41.3834581,"library",NA,NA
+7110443458,"Arxiu Històric de la Diputació de Barcelona","Diputació de Barcelona","public",NA,NA,8028,2.1255051,41.3831999,"library",NA,NA
+9565974338,"CRAI Biblioteca d'Economia i Empresa Recerca Universitat de Barcelona UB",NA,NA,NA,NA,8034,2.1140444,41.3858811,"library",NA,NA
+9597039417,"Ona Llibres",NA,NA,NA,NA,8012,2.1512103,41.4046584,"library",NA,NA
+1339597915,"Nou Barris - Aurora Diaz Plaja","Diputació de Barcelona",NA,NA,NA,NA,2.1705836,41.4366923,"library",NA,NA
+672948135,"Gerència del Sector d'Urbanisme i Infraestructures - Biblioteca d'Urbanisme",NA,NA,NA,NA,8018,2.1908792,41.4045469,"library",NA,NA
+4393318572,"Biblioteca Besós, Ramon d'Alós Moner",NA,NA,NA,NA,NA,2.2118157,41.416532,"library",NA,NA
+8049731605,"Lectorium Rosicrucianum",NA,NA,NA,NA,NA,2.1984465,41.404448,"library",NA,NA
+9357738787,"Arxiu Historic del Poblenou",NA,NA,NA,NA,NA,2.2123332,41.4059366,"library",NA,NA
+169824971,"Biblioteca Clarà",NA,NA,NA,NA,NA,2.12960542857214,41.3997736351636,"library",NA,NA
+163689483,"Pavelló de la República",NA,NA,NA,NA,NA,2.15129680355334,41.4307042509007,"library",NA,NA
+217167360,"Arxiu de la Corona d'Aragó",NA,NA,NA,NA,NA,2.18612967784756,41.3947043107272,"library",NA,NA
+271480164,"Biblioteca Sofia Barat","Diputació de Barcelona",NA,NA,NA,NA,2.17215583068954,41.3951856509233,"library",NA,NA
+532214345,"Biblioteca Artur Martorell",NA,NA,NA,NA,NA,2.1481029798643,41.3748396463079,"library",NA,NA
+642719980,"Biblioteca Rector Gabriel Ferraté","Universitat Politecnica de Catalunya",NA,NA,NA,NA,2.11247832049723,41.3877982230983,"library",NA,NA
+316538443,"Dipòsit de les Aigües","Universitat Pompeu Fabra",NA,NA,NA,NA,2.18891989798669,41.390443059308,"library",NA,NA
+1131201330,"Torre",NA,NA,NA,NA,NA,2.19029804973413,41.3898929504827,"library",NA,NA
+8025720695,"Dipòsit del Rei Martí",NA,NA,NA,NA,NA,2.1272232,41.4090119,"museum",NA,NA
+8390209227,"Antuc Car Club de Catalunya",NA,NA,NA,NA,NA,2.1416023,41.3983045,"museum",NA,NA
+11118498705,"Museu Africà Daniel Comboni",NA,NA,NA,NA,NA,2.1622987,41.4356997,"museum",NA,NA
+1072728133,"Sala Güell",NA,NA,NA,NA,8002,2.1744806,41.3844934,"museum",NA,NA
+1654108403,"Museu de la Moto","Areas de Bassella",NA,NA,NA,8002,2.17453,41.3833403,"museum",NA,NA
+2136227451,"Museu de la Marihuana",NA,NA,NA,NA,8002,2.180124,41.3808075,"museum",NA,NA
+4607818900,"Gaudí Exhibition Center - MDB",NA,NA,NA,NA,8002,2.176197,41.3845639,"museum",NA,NA
+4724329201,"Museu Eròtic de Barcelona",NA,NA,NA,NA,NA,2.1725665,41.382243,"museum",NA,NA
+5001130403,"El Rei de la Màgia",NA,NA,NA,NA,NA,2.1738805,41.3884888,"museum",NA,NA
+5009538421,"Museu de les il·lusions",NA,NA,NA,NA,8001,2.1698409,41.3828465,"museum",NA,NA
+5198083737,"Laboratori de Natura","Museu de Ciències Naturals de Barcelona",NA,NA,NA,8003,2.1836707,41.3881207,"museum",NA,NA
+6055403376,"MUHBA Domus de Sant Honorat",NA,NA,NA,NA,8002,2.1760031,41.3826234,"museum",NA,NA
+6064401162,"MUHBA Domus Avinyó",NA,NA,NA,NA,8002,2.1768433,41.3811467,"museum",NA,NA
+6742154244,"Museu d'Història de Catalunya",NA,NA,NA,NA,8039,2.1859682,41.3806173,"museum",NA,NA
+6982850087,"Arxiu Fotogràfic de Barcelona","Ajuntament de Barcelona",NA,NA,NA,NA,2.1817909,41.3869124,"museum",NA,NA
+7523391883,"EcoMuseu Urbà Gitano de Barcelona",NA,NA,NA,NA,8001,2.1664828,41.3791633,"museum",NA,NA
+8025340253,"Fundació Enric Miralles",NA,NA,NA,NA,8002,2.1773177,41.3782466,"museum",NA,NA
+9080785018,"Memrorial Democràtic",NA,NA,NA,NA,NA,2.1679388,41.3819264,"museum",NA,NA
+11377328269,"Museu Banksy",NA,NA,NA,NA,NA,2.176194,41.3890544,"museum",NA,NA
+12064695482,"Palau Martorell",NA,NA,NA,NA,NA,2.1790363,41.3793157,"museum",NA,NA
+673264230,"Museu de la Música",NA,NA,NA,NA,8013,2.1855755,41.3988917,"museum",NA,NA
+1962720907,"Museu del Modernisme Català",NA,NA,NA,NA,8008,2.1633974,41.3888541,"museum",NA,NA
+1962723905,"Museu Tàpies",NA,NA,NA,NA,8007,2.1636636,41.3916216,"museum",NA,NA
+4316268495,"Museu del Perfum",NA,NA,NA,NA,NA,2.1653221,41.3913658,"museum",NA,NA
+4553142274,"Museu de la Sagrada Família",NA,NA,NA,NA,NA,2.1742612,41.4031293,"museum",NA,NA
+4724895518,"Museu i Centre d'Estudis de l'Esport Doctor Melcior Colet",NA,NA,NA,NA,NA,2.1481907,41.393093,"museum",NA,NA
+6357834157,"Museu Egipci","Fundació Arqueològica Clos",NA,NA,NA,8007,2.1647396,41.3936228,"museum",NA,NA
+11295779915,"Museu de l'Art Prohibit",NA,NA,NA,NA,8007,2.1652851,41.3889062,"museum",NA,NA
+11311336069,"Paradox Museum",NA,NA,NA,NA,NA,2.1726876,41.3892982,"museum",NA,NA
+12281512063,"Plaza de Toros Monumental de Barcelona",NA,NA,NA,NA,NA,2.1811145,41.4000597,"museum",NA,NA
+3797211477,"Refugi 307","MUHBA",NA,NA,NA,NA,2.1666274,41.3714368,"museum",NA,NA
+4724170213,"Museu de Carrosses Fúnebres",NA,NA,NA,NA,NA,2.1559313,41.3531369,"museum",NA,NA
+4825413436,"Museu Fran Daurel","Museo Fran Daurel",NA,NA,NA,NA,2.1484798,41.3686387,"museum",NA,NA
+8731194994,"Museu de les Arts Escèniques","Diputació de Barcelona",NA,NA,NA,8004,2.1576206,41.3717797,"museum",NA,NA
+3326863254,"Roca Barcelona Gallery",NA,NA,NA,NA,NA,2.1289757,41.3865788,"museum",NA,NA
+5337055959,"Camp Nou Experience",NA,NA,NA,NA,8028,2.1206365,41.38039,"museum",NA,NA
+6968889895,"Reial Monestir de Santa Maria de Pedralbes","Ajuntament de Barcelona",NA,NA,NA,NA,2.112686,41.3957409,"museum",NA,NA
+4607840040,"Gaudí Experiència",NA,NA,NA,NA,8024,2.1542471,41.411973,"museum",NA,NA
+5005313036,"Pis-Museu Casa Bloc","Ajuntament de Barcelona",NA,NA,NA,8030,2.1906233,41.4415407,"museum",NA,NA
+11935325269,"Museu Alien",NA,NA,NA,NA,8027,2.1824636,41.4191976,"museum",NA,NA
+3881133261,"MUHBA Oliva Artés",NA,NA,NA,NA,NA,2.2015252,41.4083519,"museum",NA,NA
+12409911456,"Museu de Ciències Naturals de Barcelona",NA,NA,NA,NA,8001,2.2210522,41.4111252,"museum",NA,NA
+248742203,"Cosmocaixa","Fundació ""la Caixa""",NA,NA,NA,NA,2.13159861243337,41.4125441672901,"museum",NA,NA
+262521719,"Museu Palmero",NA,NA,NA,NA,8035,2.13980818508176,41.4247606405988,"museum",NA,NA
+266633090,"Casa Museu Núria Pla",NA,NA,NA,NA,NA,2.17044699076205,41.4159710178533,"museum",NA,NA
+33570473,"Centre Martorell d'Exposicions",NA,NA,NA,NA,NA,2.18436514379557,41.3871314945822,"museum",NA,NA
+36930946,"Museu d'Art Contemporani de Barcelona",NA,NA,NA,NA,8001,2.16676618626077,41.3831053392786,"museum",NA,NA
+136060835,"El Born: Museu d'Història de Barcelona","Ajuntament de Barcelona",NA,NA,NA,NA,2.18380075011804,41.3858311106308,"museum",NA,NA
+305246059,"Centre de Cultura Contemporània de Barcelona",NA,NA,NA,NA,NA,2.16558038312784,41.3836826443635,"museum",NA,NA
+124189501,"Palau Robert",NA,NA,NA,NA,NA,2.15940910852079,41.396051343647,"museum",NA,NA
+43995751,"Museu Nacional d'Art de Catalunya",NA,NA,NA,NA,NA,2.15361591846424,41.3683639984352,"museum",NA,NA
+214435557,"Museu Olímpic i de l'Esport;Museu Olímpic i de l'Esport Joan Antoni Samaranch",NA,NA,NA,NA,NA,2.15770505688083,41.3660645395413,"museum",NA,NA
+217141713,"Espai Bombers - Parc de la Prevenció de Barcelona","Ajuntament de Barcelona",NA,NA,NA,NA,2.15441904520771,41.3736524584738,"museum",NA,NA
+217475661,"CaixaForum Barcelona",NA,NA,NA,NA,NA,2.14935499388577,41.3714752825677,"museum",NA,NA
+126856515,"Casa Museu Gaudí",NA,NA,NA,NA,8024,2.15357478726469,41.414425849061,"museum",NA,NA
+672895475,"Casa del Guarda",NA,NA,NA,NA,NA,2.15319853428031,41.4135654684635,"museum",NA,NA
+638771097,"MUHBA Casa de l'Aigua",NA,NA,NA,NA,NA,2.18921670865273,41.4544967366222,"museum",NA,NA
+665346739,"Sala de Calderes (MUHBA)","MUHBA",NA,NA,NA,8030,2.19131160254311,41.4331781051639,"museum",NA,NA
+192944873,"Can Framis","Fundació Vila Casas",NA,NA,NA,NA,2.19493624403932,41.4031772840214,"museum",NA,NA
+2922095499,"CodeLearn",NA,NA,NA,NA,NA,2.1374992,41.4093346,"school",NA,NA
+4362720289,"Sant Marc de Sarrià",NA,NA,NA,NA,NA,2.1229418,41.4015789,"school",NA,NA
+6221586426,"Canigó",NA,NA,NA,NA,8022,2.1331531,41.4110373,"school",NA,NA
+6356114785,"Lleó XIII",NA,NA,NA,NA,NA,2.1373285,41.4125428,"school",NA,NA
+6374448088,"CFA Rius i Taulet","Consorci d'educació de Barcelona",NA,NA,NA,NA,2.1497687,41.4030447,"school",NA,NA
+6387301097,"Mary Ward",NA,NA,NA,NA,NA,2.1416892,41.4018643,"school",NA,NA
+6387316992,"Escola Nausica",NA,NA,NA,NA,NA,2.1452907,41.3971348,"school",NA,NA
+11445879169,"Escola Taiga",NA,NA,NA,NA,NA,2.1117111,41.4086586,"school",NA,NA
+11468746969,"Escoles Fàsia",NA,NA,NA,NA,NA,2.125094,41.4051254,"school",NA,NA
+11502708769,"OAK House School",NA,NA,NA,NA,NA,2.1175787,41.407014,"school",NA,NA
+12326935894,"Escola Concepcionistes",NA,NA,NA,NA,NA,2.14863,41.4056557,"school",NA,NA
+12621284701,"Escola Galí Bellesguard",NA,NA,NA,NA,8035,2.125219,41.4124936,"school",NA,NA
+3152388243,"Institut Ferran Tallada",NA,NA,NA,NA,NA,2.1639268,41.4209586,"school",NA,NA
+5953308114,"Dinamis",NA,NA,NA,NA,NA,2.1717463,41.410552,"school",NA,NA
+6172556586,"Nen Déu",NA,NA,NA,NA,NA,2.1776212,41.4231538,"school",NA,NA
+6972659290,"Guinardó",NA,NA,NA,NA,NA,2.1796074,41.4199199,"school",NA,NA
+7564957685,"Escola Estel-Guinardó",NA,NA,NA,NA,NA,2.172604,41.4175649,"school",NA,NA
+8706666842,"Escola Piaget",NA,NA,NA,NA,NA,2.1524419,41.4223901,"school",NA,NA
+8706758999,"Santa Teresa de Jesús",NA,NA,NA,NA,NA,2.1556907,41.4242233,"school",NA,NA
+10802654436,"Princess Margaret School",NA,NA,NA,NA,NA,2.1659356,41.4265349,"school",NA,NA
+11472510270,"Escola Fedac Horta",NA,NA,NA,NA,NA,2.1552118,41.4343374,"school",NA,NA
+3218700095,"Stucom",NA,NA,NA,NA,8001,2.1651112,41.3858343,"school",NA,NA
+3688165686,"La Salle Barceloneta",NA,NA,NA,NA,NA,2.1889751,41.3822035,"school",NA,NA
+4179630930,"Escola Ángel Baixeiras",NA,NA,NA,NA,8002,2.178929,41.3810462,"school",NA,NA
+5772442155,"Escola Tècnico-Professional Xavier",NA,NA,NA,NA,NA,2.1775217,41.3857648,"school",NA,NA
+6508661864,"CFA Maria Rubies","Departament d’Ensenyament de la Generalitat de Catalunya","public",NA,NA,8001,2.1699014,41.3786314,"school",NA,NA
+8514372351,"entrada parking La Garduña",NA,NA,NA,NA,NA,2.171326,41.3812693,"school",NA,NA
+10294712009,"Institut de Nàutica de Barcelona",NA,NA,NA,NA,NA,2.1882103,41.3758124,"school",NA,NA
+12854208701,"ECIB (Escuela de Cine de Barcelona)",NA,NA,NA,NA,NA,2.1837808,41.3901926,"school",NA,NA
+673401238,"Escola Fort Pienc",NA,NA,NA,NA,8013,2.1824289,41.3950111,"school",NA,NA
+2468856169,"I.P.S.I. Escola de Primària","I.P.S.I.",NA,NA,NA,8029,2.149936,41.3868561,"school",NA,NA
+2468856170,"I.P.S.I. Escola de Secundària","I.P.S.I.",NA,NA,NA,8029,2.151194,41.3861554,"school",NA,NA
+2969271221,"Llar Marillac",NA,NA,NA,NA,NA,2.1715026,41.4024203,"school",NA,NA
+4120621393,"Francesc Pejoan",NA,NA,NA,NA,NA,2.1647553,41.3990324,"school",NA,NA
+4254709649,"Mare del Diví Pastor",NA,NA,NA,NA,NA,2.1753283,41.3935321,"school",NA,NA
+4506626165,"Escola Gaia",NA,NA,NA,NA,NA,2.1828802,41.4037889,"school",NA,NA
+5499170321,"Vedruna Immaculada Barcelona",NA,NA,NA,NA,NA,2.1811715,41.4074982,"school",NA,NA
+5504876826,"Sagrat Cor-Esclaves",NA,NA,NA,NA,8008,2.1615752,41.3922402,"school",NA,NA
+5917832943,"Institut Lluïsa Cura",NA,NA,NA,NA,NA,2.1631646,41.3809351,"school",NA,NA
+6104152863,"Prat",NA,NA,NA,NA,8037,2.1655929,41.3954608,"school",NA,NA
+6326888985,"St. Nicholas School",NA,NA,NA,NA,NA,2.1633911,41.396571,"school",NA,NA
+6882132390,"Sant Josep Oriol",NA,NA,NA,NA,NA,2.1575804,41.3843765,"school",NA,NA
+7128883387,"Immaculada Concepció Barcelona",NA,NA,NA,NA,NA,2.1618131,41.3913086,"school",NA,NA
+7860589685,"Escola Joso",NA,NA,NA,NA,NA,2.1442937,41.3842387,"school",NA,NA
+9381328713,"Perez Iborra",NA,NA,NA,NA,NA,2.163455,41.3896119,"school",NA,NA
+9800778617,"Escola Entença",NA,NA,NA,NA,NA,2.145432,41.3827802,"school",NA,NA
+9846873718,"Som-hi dansa",NA,NA,NA,NA,NA,2.144448,41.3912453,"school",NA,NA
+9850978018,"Escola Nàutica Port Olímpic",NA,NA,NA,NA,NA,2.1466186,41.391903,"school",NA,NA
+10228056720,"Eada business school Barcelona",NA,NA,NA,NA,NA,2.156194,41.3904669,"school",NA,NA
+12365186067,"Sant Francesc d'Assís",NA,NA,NA,NA,NA,2.1633796,41.3851397,"school",NA,NA
+2123259390,"Institut Mare de Déu de la Mercè",NA,NA,NA,NA,8040,2.1432848,41.3497188,"school",NA,NA
+6450036172,"Escola d'Aprenents SEAT",NA,NA,NA,NA,NA,2.1428785,41.3541097,"school",NA,NA
+6733344223,"Escola Arcadia","Can Batlló",NA,NA,NA,8014,2.1368274,41.3690684,"school",NA,NA
+7023927875,"FEP Sant Medir",NA,NA,NA,NA,8014,2.1383851,41.3696026,"school",NA,NA
+9336762621,"Escola Magòria",NA,NA,NA,NA,NA,2.1465096,41.3716637,"school",NA,NA
+9796639765,"Col·legi Alfageme",NA,NA,NA,NA,8038,2.1385526,41.3611946,"school",NA,NA
+9807015619,"Forma't",NA,NA,NA,NA,NA,2.1436946,41.3745231,"school",NA,NA
+5536378631,"Escola Bressol Can Bacardí",NA,NA,NA,NA,NA,2.1238033,41.379259,"school",NA,NA
+6093696717,"Institut Les Corts",NA,NA,NA,NA,8028,2.1262533,41.3814774,"school",NA,NA
+6125180174,"Santa Teresa de Lisieux",NA,NA,NA,NA,NA,2.1350304,41.3884185,"school",NA,NA
+9565872999,"NOVA estudis",NA,NA,NA,NA,8034,2.1141121,41.386966,"school",NA,NA
+9569038492,"Magic Mirror Center",NA,NA,NA,NA,8034,2.1236315,41.3895553,"school",NA,NA
+4549073209,"La Farigola de Vallcarca",NA,NA,NA,NA,8023,2.1467863,41.413805,"school",NA,NA
+6635731385,"L'Obrador del Burot",NA,NA,NA,NA,8025,2.1657096,41.4067344,"school",NA,NA
+6939006385,"Escola Solc Nou",NA,NA,NA,NA,NA,2.1425476,41.4145079,"school",NA,NA
+7438745257,"Escola Joan Triadú",NA,NA,NA,NA,NA,2.1598482,41.4066921,"school",NA,NA
+11293455969,"Sant Josep Teresianes",NA,NA,NA,NA,NA,2.1653126,41.4057834,"school",NA,NA
+11697586039,"acidH","Asociación Catalana de Integración y Desarrollo Humano","ngo",NA,NA,8012,2.1612391,41.402057,"school",NA,NA
+11875945569,"Escola Gravi",NA,NA,NA,NA,NA,2.1407117,41.4183958,"school",NA,NA
+1744712807,"Escola Pia-Luz Casanova",NA,NA,NA,NA,NA,2.1752287,41.4431366,"school",NA,NA
+5867783454,"Ateneu de Fabricacio de Ciutat Meridiana",NA,NA,NA,NA,8033,2.1699544,41.4602826,"school",NA,NA
+7159042926,"Cruïlla al Punt. Escola de cuina","Salesians",NA,NA,NA,NA,2.1806539,41.4598999,"school",NA,NA
+9869720919,"Col-legi Camí",NA,NA,NA,NA,NA,2.1809513,41.4296985,"school",NA,NA
+12315954701,"CFA Freire",NA,NA,NA,NA,NA,2.1759238,41.4446992,"school",NA,NA
+12315957201,"CFA Prosperitat",NA,NA,NA,NA,NA,2.1794888,41.4441248,"school",NA,NA
+7889180885,"Llotja. Escola superior de disseny i art",NA,NA,NA,NA,NA,2.1921475,41.4274712,"school",NA,NA
+7987398286,"Mare de Déu dels Àngels",NA,NA,NA,NA,NA,2.1912905,41.4233164,"school",NA,NA
+11449189569,"Escola Sants Innocents",NA,NA,NA,NA,NA,2.1815653,41.4248306,"school",NA,NA
+12508842801,"Escola Sants Inocents",NA,NA,NA,NA,NA,2.1838281,41.4251615,"school",NA,NA
+12967349401,"Monlau Formación Profesional - La Maquinista",NA,NA,NA,NA,8030,2.2023742,41.4440172,"school",NA,NA
+4286192649,"CFA El Clot",NA,NA,NA,NA,NA,2.1922369,41.4114074,"school",NA,NA
+5790096153,"Mare de Déu de Núria",NA,NA,NA,NA,NA,2.1854155,41.4107971,"school",NA,NA
+6358499952,"Col·legi Sant Gabriel",NA,NA,NA,NA,8020,2.2115959,41.4213383,"school",NA,NA
+6789066187,"Les Mans",NA,NA,NA,NA,NA,2.1811954,41.4107648,"school",NA,NA
+7559104185,"Kumon",NA,NA,NA,NA,NA,2.1934399,41.4073716,"school",NA,NA
+8034999985,"Barcelona Akademy of art",NA,NA,NA,NA,NA,2.1989863,41.397816,"school",NA,NA
+10130538818,"Epitech Barcelone",NA,NA,NA,NA,8005,2.1939432,41.3910039,"school",NA,NA
+11556313369,"Escuela Ucraniana MRIYA",NA,NA,NA,NA,8020,2.196165,41.4217333,"school",NA,NA
+12204894201,"Escola de dansa - STAGE",NA,NA,NA,NA,NA,2.1778942,41.4134349,"school",NA,NA
+93631642,"Escola Betània - Patmos",NA,NA,NA,NA,NA,2.11013036014946,41.3972725956241,"school",NA,NA
+106404650,"Col·legi Jesús i Maria",NA,NA,NA,NA,8022,2.13240632614972,41.409320337041,"school",NA,NA
+138215744,"Frederic Mistral-Tècnic Eulàlia",NA,NA,NA,NA,NA,2.11756533332817,41.3986368412652,"school",NA,NA
+157384055,"Escola Tàber",NA,NA,NA,NA,NA,2.11251765291438,41.4009939677437,"school",NA,NA
+158527535,"Institut Escola Costa i Llobera",NA,NA,NA,NA,8017,2.10849600473544,41.4014932733755,"school",NA,NA
+163198173,"Escola Els Xiprers",NA,NA,NA,NA,NA,2.10196037155868,41.4198997015659,"school",NA,NA
+163718461,"CEE Vil·la Joana",NA,NA,NA,NA,NA,2.09749083703245,41.4212903410642,"school",NA,NA
+169042229,"Lycée Français de Barcelone",NA,NA,NA,NA,NA,2.11915474152021,41.3923608363364,"school",NA,NA
+169805217,"Santa Teresa - Ganduxer",NA,NA,NA,NA,NA,2.13306602405243,41.3994861179799,"school",NA,NA
+192254344,"Escola Frederic Mistral - Tècnic Eulàlia (Centre Tibidabo)",NA,NA,NA,NA,NA,2.13267923694922,41.4159295269916,"school",NA,NA
+200190549,"La Salle Bonanova",NA,NA,NA,NA,NA,2.13082764269147,41.4067906673648,"school",NA,NA
+200192332,"Jesuïtes Sarrià - Sant Ignasi",NA,NA,NA,NA,8017,2.12044907432059,41.4042692948891,"school",NA,NA
+254693766,"Escola Pia Balmes","Escoles Pia de Catalunya",NA,NA,NA,NA,2.15180580985318,41.3981162493024,"school",NA,NA
+316645126,"Escola Pia de Sarrià-Calassanç",NA,NA,NA,NA,NA,2.12394421625476,41.4074682149663,"school",NA,NA
+331490925,"Mare de Déu del Roser Les Planes",NA,NA,NA,NA,NA,2.09243376666105,41.4282392488746,"school",NA,NA
+345535027,"Escola Nabí",NA,NA,NA,NA,NA,2.101388855105,41.4162744468803,"school",NA,NA
+449209626,"Escola Súnion",NA,NA,NA,NA,NA,2.14522547013881,41.4104594540098,"school",NA,NA
+449214204,"SIL",NA,NA,NA,NA,NA,2.13556668963258,41.4130799886462,"school",NA,NA
+474812440,"Institut Montserrat",NA,NA,NA,NA,NA,2.14342001711208,41.4015465743435,"school",NA,NA
+477871556,"Escola Poeta Foix",NA,NA,NA,NA,NA,2.14604728804464,41.4024190855524,"school",NA,NA
+482010110,"Escola Augusta",NA,NA,NA,NA,NA,2.1412627725856,41.397020211971,"school",NA,NA
+644454681,"Aula Escuela Europea",NA,NA,NA,NA,NA,2.10731754819714,41.3994180952095,"school",NA,NA
+646064697,"Institut Josep Serrat i Bonastre","Departament d'Ensenyament",NA,NA,NA,NA,2.14818506633812,41.4066403728076,"school",NA,NA
+649638357,"Associació Centre Pedralbes",NA,NA,NA,NA,NA,2.11430672715894,41.3980348356796,"school",NA,NA
+650110220,"Sagrado Corazón",NA,NA,NA,NA,NA,2.12062558447589,41.3928889135283,"school",NA,NA
+650151339,"Escola Orlandai",NA,NA,NA,NA,NA,2.11955739776464,41.3971258487952,"school",NA,NA
+652517452,"Scuola Dell'infanzia Maria Montessori",NA,NA,NA,NA,NA,2.12064065856609,41.3981672595446,"school",NA,NA
+658493241,"Escola Nostra Senyora de Lurdes",NA,NA,NA,NA,NA,2.15064141563982,41.4003838305903,"school",NA,NA
+682987877,"Institució Cultural del CIC",NA,NA,NA,NA,NA,2.13891041380709,41.397520732867,"school",NA,NA
+711128192,"Escola Infant Jesús",NA,NA,NA,NA,NA,2.14958682038133,41.3968098084166,"school",NA,NA
+760983823,"Escola Santa Dorotea. Salesianes Sarrià",NA,NA,NA,NA,NA,2.12916338723702,41.3936540466402,"school",NA,NA
+775056134,"Institut Menéndez y Pelayo",NA,NA,NA,NA,NA,2.14468655753421,41.4002106602148,"school",NA,NA
+789057037,"Els Arcs",NA,NA,NA,NA,NA,2.1391482197862,41.4000000071238,"school",NA,NA
+861104130,"Lyceé Français de Barcelone",NA,NA,NA,NA,NA,2.12922729913429,41.4056782508402,"school",NA,NA
+944304370,"Escola Dolors Monserdà-Santapau",NA,NA,NA,NA,NA,2.11546469331902,41.4049864044124,"school",NA,NA
+1020894951,"Escola Montserrat",NA,NA,NA,NA,NA,2.11056939912048,41.4094594709578,"school",NA,NA
+1040182125,"Sagrat Cor-Sarrià",NA,NA,NA,NA,NA,2.11697192846062,41.4006789904591,"school",NA,NA
+1171000604,"Col·legi Reial Monestir de Santa Isabel",NA,NA,NA,NA,NA,2.12593140932011,41.3969719288407,"school",NA,NA
+37039487,"Escola Gravi",NA,NA,NA,NA,8035,2.1389095702557,41.4207501263724,"school",NA,NA
+37040780,"Escola Oficial d'Idiomes de Barcelona Vall d'Hebron",NA,NA,NA,NA,8035,2.13863232750492,41.4269680337798,"school",NA,NA
+81343599,"Escola Mare Nostrum",NA,NA,NA,NA,NA,2.15484975160902,41.4365213059864,"school",NA,NA
+82436378,"Institut Escola Art. Oriol Martorell",NA,NA,NA,NA,NA,2.15970278048858,41.4404797066939,"school",NA,NA
+163689479,"CEE Folch i Camarasa",NA,NA,NA,NA,NA,2.14992726008363,41.4326393435241,"school",NA,NA
+163689480,"Escola Pau Casals",NA,NA,NA,NA,NA,2.15176881951497,41.4320080136963,"school",NA,NA
+166424907,"Escola Baloo",NA,NA,NA,NA,NA,2.14000027852759,41.4340836902482,"school",NA,NA
+183216136,"Institut Narcís Monturiol",NA,NA,NA,NA,NA,2.14482084188235,41.4323376451599,"school",NA,NA
+243092368,"Centre Educatiu Providencia del Corazón de Jesús",NA,NA,NA,NA,NA,2.15724451766998,41.4384749901265,"school",NA,NA
+257987593,"La Salle Horta",NA,NA,NA,NA,NA,2.16075552631958,41.4366138849813,"school",NA,NA
+258147960,"Escola Els Pins",NA,NA,NA,NA,NA,2.14437915277055,41.4353691744044,"school",NA,NA
+259629175,"Escola Torrent de Can Carabassa",NA,NA,NA,NA,NA,2.16280597839471,41.4270917559382,"school",NA,NA
+262033253,"Escola Institut Mirades",NA,NA,NA,NA,NA,2.1528466175085,41.4264763950437,"school",NA,NA
+262521810,"Institut Vall d'Hebron",NA,NA,NA,NA,NA,2.14037186187364,41.4230813904015,"school",NA,NA
+308984594,"Escola del Mar",NA,NA,NA,NA,8041,2.17014210679577,41.4178848004855,"school",NA,NA
+324477988,"Escola Guinardó",NA,NA,NA,NA,NA,2.1779602464197,41.4199592154417,"school",NA,NA
+447103849,"Escola Àngels Garriga","Pública",NA,NA,NA,NA,2.1678407598337,41.4259985515001,"school",NA,NA
+459465565,"Escola de les Aigües",NA,NA,NA,NA,NA,2.16670381447091,41.4091400354398,"school",NA,NA
+473390897,"Institut Teresa Pàmies",NA,NA,NA,NA,NA,2.16791695940448,41.4082241622537,"school",NA,NA
+553812645,"Institut Joan Brossa",NA,NA,NA,NA,NA,2.1674076452937,41.4145815475722,"school",NA,NA
+672905789,"Escola Virolai",NA,NA,NA,NA,NA,2.15217637432077,41.4176571559601,"school",NA,NA
+679826260,"Escola Parc del Guinardó",NA,NA,NA,NA,NA,2.17008201793547,41.4200606659678,"school",NA,NA
+686327917,"Escola Mare de Déu de Montserrat",NA,NA,NA,NA,NA,2.1353832593071,41.426102642692,"school",NA,NA
+686411831,"Escola d'Aprenents Sant Genís dels Agudells","Fundació Escoles Parroquials",NA,NA,NA,NA,2.13641664575299,41.4279297146213,"school",NA,NA
+879037064,"Centre Educatiu Immaculada Concepció",NA,NA,NA,NA,NA,2.16130042393387,41.4283289954421,"school",NA,NA
+905172760,"Escola Arc Iris","Generalitat de Catalunya",NA,NA,NA,NA,2.17096883167347,41.4252118321294,"school",NA,NA
+984970655,"Escola Regina Carmeli",NA,NA,NA,NA,NA,2.15833354780177,41.4344879675177,"school",NA,NA
+1016853825,"Acis",NA,NA,NA,NA,NA,2.16050463441619,41.4145385512912,"school",NA,NA
+1029638423,"Liceu Castro de la Peña",NA,NA,NA,NA,NA,2.17538671782865,41.416963185043,"school",NA,NA
+1039819692,"Acis-Artur Martorell",NA,NA,NA,NA,NA,2.16208068394715,41.4166324069785,"school",NA,NA
+74068866,"Institut Narcís Monturiol",NA,NA,NA,NA,NA,2.19249094065708,41.3817326790316,"school",NA,NA
+216980023,"Escola Milà i Fontanals",NA,NA,NA,NA,NA,2.16824199389445,41.3816380928175,"school",NA,NA
+288237022,"Escola Pere Vila",NA,NA,NA,NA,NA,2.18132149604278,41.3916661864092,"school",NA,NA
+361838216,"Escola Parc de la Ciutadella",NA,NA,NA,NA,NA,2.18795961832169,41.3850695881369,"school",NA,NA
+382484453,"Escola Cintra",NA,NA,NA,NA,NA,2.16866942284207,41.3783171394096,"school",NA,NA
+439284877,"Escola Pia Sant Antoni",NA,NA,NA,NA,NA,2.16408033413061,41.3783809416513,"school",NA,NA
+682981133,"Escola Drassanes",NA,NA,NA,NA,NA,2.17774661245313,41.3792413658796,"school",NA,NA
+779655827,"Escola Collaso i Gil",NA,NA,NA,NA,NA,2.16941384312359,41.375907571392,"school",NA,NA
+779657777,"Escola Rubén Darío",NA,NA,NA,NA,NA,2.16584588447645,41.3769860273765,"school",NA,NA
+1018241279,"La Salle Comtal",NA,NA,NA,NA,NA,2.17547433801848,41.3880215217856,"school",NA,NA
+35815527,"Escola Ramon Llull",NA,NA,NA,NA,NA,2.17783096460473,41.400656657867,"school",NA,NA
+146368989,"Col·legi Sagrat Cor-Diputació",NA,NA,NA,NA,NA,2.17398634628423,41.3951409853066,"school",NA,NA
+249402305,"Escola Diputació",NA,NA,NA,NA,NA,2.15595009560996,41.381526951464,"school",NA,NA
+249403786,"Escola Pia Sant Miquel",NA,NA,NA,NA,NA,2.15386251338763,41.3913548830216,"school",NA,NA
+249403970,"Institut Poeta Maragall",NA,NA,NA,NA,NA,2.15667504887038,41.3915098539004,"school",NA,NA
+249404711,"Escola Mallorca",NA,NA,NA,NA,NA,2.14810379045359,41.3911265004447,"school",NA,NA
+260307740,"Dominiques Barcelona",NA,NA,NA,NA,NA,2.17113528326383,41.4008408625078,"school",NA,NA
+301637248,"Escola Pia de Nostra Senyora",NA,NA,NA,NA,NA,2.16767183236605,41.3913625572991,"school",NA,NA
+314491163,"Col·legi Maristes la Immaculada",NA,NA,NA,NA,NA,2.17192771346067,41.3985663113574,"school",NA,NA
+402753028,"Escolàpies Llúria",NA,NA,NA,NA,NA,2.16824020164521,41.3940499452715,"school",NA,NA
+436561599,"Escola 9 Graons",NA,NA,NA,NA,NA,2.16874430974491,41.4011991845795,"school",NA,NA
+526797878,"Escola Fructuós Gelabert",NA,NA,NA,NA,NA,2.17042697854606,41.4060455268836,"school",NA,NA
+543887500,"Sagrado Corazón",NA,NA,NA,NA,NA,2.18382154181219,41.3996990892469,"school",NA,NA
+570480806,"Institut Fort Pius",NA,NA,NA,NA,NA,2.17991933722694,41.3941446936283,"school",NA,NA
+671282476,"Institut Jaume Balmes",NA,NA,NA,NA,NA,2.16670584213617,41.392312688484,"school",NA,NA
+684347158,"Institut Viladomat",NA,NA,NA,NA,8015,2.1547392761287,41.3824603436595,"school",NA,NA
+815448572,"Jesuïtes Casp - Sagrat Cor de Jesús","Jesuïtes",NA,NA,NA,NA,2.17138246261097,41.3903067246598,"school",NA,NA
+889209605,"Escola Els Llorers",NA,NA,NA,NA,NA,2.15294492186893,41.3838368520568,"school",NA,NA
+1092390214,"Col·legi Urgell",NA,NA,NA,NA,8036,2.15291028387287,41.3858259416523,"school",NA,NA
+1112049064,"Institut Angeleta Ferrer",NA,NA,NA,NA,NA,2.17897256366435,41.4001050901491,"school",NA,NA
+1126965696,"Escola Sagrat Cor",NA,NA,NA,NA,NA,2.16542095982104,41.3756054642631,"school",NA,NA
+1226173444,"Salesià de Sant Josep",NA,NA,NA,NA,8015,2.15637922719121,41.3774832031052,"school",NA,NA
+207370199,"Institut del Teatre",NA,NA,NA,NA,8004,2.15734792643724,41.3716872292949,"school",NA,NA
+214447034,"Escola De Bosc de Montjuïc",NA,NA,NA,NA,NA,2.1610549860668,41.3691650437153,"school",NA,NA
+217139629,"Maristes Anna Ravell",NA,NA,NA,NA,NA,2.16170810319013,41.3720689917573,"school",NA,NA
+217139718,"Escola Poble-sec",NA,NA,NA,NA,NA,2.1645541755289,41.3705676642632,"school",NA,NA
+217475717,"Escola La Muntanyeta",NA,NA,NA,NA,NA,2.14759295273044,41.3700796754472,"school",NA,NA
+217481070,"Escola Enric Granados",NA,NA,NA,NA,NA,2.14217507524405,41.3569915121684,"school",NA,NA
+249404964,"Escola Pràctiques",NA,NA,NA,NA,NA,2.13899364029664,41.3808993743315,"school",NA,NA
+263333530,"Col·legi Maristes Sants - les Corts",NA,NA,NA,NA,NA,2.13545959333409,41.374829835042,"school",NA,NA
+277964350,"Escola Seat",NA,NA,NA,NA,NA,2.1383658686728,41.3594762430507,"school",NA,NA
+278159833,"Institut Lluís Domenech i Montaner",NA,NA,NA,NA,NA,2.13370474840434,41.3587203503327,"school",NA,NA
+293068096,"Institut Consell de Cent",NA,NA,NA,NA,NA,2.17467283535461,41.3732217087604,"school",NA,NA
+354828419,"Escola especial Nostra Senyora de Montserrat",NA,NA,NA,NA,NA,2.13598139336639,41.3579507105832,"school",NA,NA
+368793593,"Escola Pau Vila",NA,NA,NA,NA,NA,2.1423627845401,41.3668131283927,"school",NA,NA
+376817345,"Escola Proa",NA,NA,NA,NA,NA,2.13983031627206,41.371597106335,"school",NA,NA
+508824154,"Institut Montjuïc",NA,NA,NA,NA,NA,2.14523938401392,41.3554732052842,"school",NA,NA
+522885181,"Institució Montserrat SCCL",NA,NA,NA,NA,NA,2.13764656153326,41.3746161131579,"school",NA,NA
+523668896,"Escola Tres Pins",NA,NA,NA,NA,NA,2.16020006077814,41.3674233248336,"school",NA,NA
+527260116,"Escola Gayarre",NA,NA,NA,NA,NA,2.14040660606668,41.3728322596496,"school",NA,NA
+646510489,"Escola Bàrkeno",NA,NA,NA,NA,NA,2.1438731824246,41.3548392396636,"school",NA,NA
+647500462,"Escola Cavall Bernat",NA,NA,NA,NA,NA,2.131674310239,41.3706207499452,"school",NA,NA
+658891806,"Col·legi Sant Francesc Xavier",NA,NA,NA,NA,NA,2.15795021593317,41.3724881593649,"school",NA,NA
+661367160,"Escola Cal Maiol",NA,"public",NA,NA,NA,2.13605995334348,41.3728003767083,"school",NA,NA
+687993925,"Escola Can Clos",NA,NA,NA,NA,NA,2.14790151335815,41.360579059299,"school",NA,NA
+693835927,"Institut Escola de Mitjans Audiovisuals - EMAV",NA,NA,NA,NA,NA,2.13838200466353,41.3676180420708,"school",NA,NA
+698323869,"Escola el Polvorí",NA,NA,NA,NA,NA,2.14254657344573,41.3634105537475,"school",NA,NA
+701110122,"Escola Francesc Macià",NA,NA,NA,NA,NA,2.14786904863128,41.3746745365649,"school",NA,NA
+770878652,"Institut Escola Arts","Consorci d'Educació de Barcelona","public",NA,NA,NA,2.14490736723732,41.3729396770813,"school",NA,NA
+782103405,"Escola Joan Pelegrí","Fundació Cultural Hostafrancs",NA,NA,NA,NA,2.144760414195,41.3757297420381,"school",NA,NA
+861097422,"Escola Mossèn Jacint Verdaguer",NA,NA,NA,NA,NA,2.15452422439139,41.3732139854444,"school",NA,NA
+951273551,"Cole·legi Garbiñe",NA,NA,NA,NA,NA,2.13734285943014,41.3652507507046,"school",NA,NA
+1017905264,"Josep Tous",NA,NA,NA,NA,NA,2.12894188342467,41.3746105950283,"school",NA,NA
+93631642,"Escola Betània - Patmos",NA,NA,NA,NA,NA,2.10998962988663,41.3957461269618,"school",NA,NA
+93632792,"Escola Pau Romeva",NA,NA,NA,NA,NA,2.11315980804236,41.3763699668755,"school",NA,NA
+138215743,"Escola Thau",NA,NA,NA,NA,NA,2.10511206972546,41.387675175241,"school",NA,NA
+141279108,"Escola Lavínia",NA,NA,NA,NA,8028,2.13017011233868,41.3814868237856,"school",NA,NA
+249401796,"Maristes Sants - les Corts",NA,NA,NA,NA,NA,2.13517770702102,41.3830024533043,"school",NA,NA
+249404571,"Escola Barcelona",NA,NA,NA,NA,NA,2.13249120552167,41.3819352665025,"school",NA,NA
+249405431,"Col·legi Pare Manyanet",NA,NA,NA,NA,NA,2.1379879352254,41.3889371495582,"school",NA,NA
+396618737,"Zürich Schule",NA,NA,NA,NA,NA,2.10414374506827,41.3935936128366,"school",NA,NA
+450582672,"Institut Pedralbes",NA,NA,NA,NA,NA,2.1061072587165,41.3861234901119,"school",NA,NA
+559245147,"ISC",NA,NA,NA,NA,NA,2.13509227058888,41.3858272140036,"school",NA,NA
+644428212,"Col·legi Abat Oliba-Loreto",NA,NA,NA,NA,NA,2.10713522825767,41.3938502271527,"school",NA,NA
+652901157,"Escola Anglesola",NA,NA,NA,NA,8029,2.13332305967594,41.3883098427175,"school",NA,NA
+653581858,"Institut escola Tres Fonts de Les Corts",NA,NA,NA,NA,8028,2.13013010790529,41.3850256598424,"school",NA,NA
+1218634554,"Escola Sant Ramon Nonat",NA,NA,NA,NA,NA,2.11665658341373,41.3760095061829,"school",NA,NA
+37038698,"Escola Pare Poveda",NA,NA,NA,NA,NA,2.14168096231527,41.4170904033531,"school",NA,NA
+37520257,"Escola Sadako",NA,NA,NA,NA,NA,2.13413313254726,41.4181031661825,"school",NA,NA
+138313077,"Escola Nou Patufet",NA,NA,NA,NA,NA,2.16056271487406,41.4047885245216,"school",NA,NA
+192254108,"Centre Educatiu Jesuïtes de Gràcia. Kostka",NA,NA,NA,NA,NA,2.15645745088188,41.4144253551347,"school",NA,NA
+237965790,"Jesuïtes Gràcia - Kostka",NA,NA,NA,NA,NA,2.15513315763912,41.4110140802329,"school",NA,NA
+296837473,"Escola La Salle Gràcia",NA,NA,NA,NA,NA,2.1545550723528,41.4070391777169,"school",NA,NA
+449191847,"Escola Rius i Taulet",NA,NA,NA,NA,NA,2.15019171977276,41.4080892556818,"school",NA,NA
+458123562,"Escola l'Univers",NA,NA,NA,NA,NA,2.16223748964147,41.4028781451726,"school",NA,NA
+460419975,"Escola Montseny",NA,NA,NA,NA,NA,2.14842352882011,41.415542556273,"school",NA,NA
+460422170,"Escola Baldiri Reixac",NA,NA,NA,NA,NA,2.15239168467679,41.4135157177431,"school",NA,NA
+526798386,"Escola Sagrada Família",NA,NA,NA,NA,NA,2.17086351345306,41.4044184275638,"school",NA,NA
+573104626,"Escola Patronat Domenech",NA,NA,NA,NA,NA,2.15806834185464,41.3985375775217,"school",NA,NA
+658140350,"Vedruna Gràcia Barcelona",NA,NA,NA,NA,NA,2.15175807083424,41.4048658049769,"school",NA,NA
+659151282,"Col·legi Sant Josep",NA,NA,NA,NA,NA,2.15527154025309,41.402399275391,"school",NA,NA
+661421593,"Escola Nou Patufet",NA,NA,NA,NA,NA,2.15920070130421,41.405715278995,"school",NA,NA
+662325029,"Escola Josep Maria Jujol",NA,NA,NA,NA,NA,2.15561597054155,41.3979808188571,"school",NA,NA
+896259769,"Escola Gravi",NA,NA,NA,NA,NA,2.1410436672164,41.4203717982073,"school",NA,NA
+974942315,"Virolai Petit",NA,NA,NA,NA,NA,2.15706096840979,41.4120291714191,"school",NA,NA
+1015010008,"Escola turó del Cargol",NA,NA,NA,NA,NA,2.1529265621425,41.4110992843409,"school",NA,NA
+1149909454,"Col·legi Sant Antoni Maria Claret",NA,NA,NA,NA,NA,2.16658088102573,41.4059622097606,"school",NA,NA
+87506264,"Aloma",NA,NA,NA,NA,NA,2.17826766186819,41.4322751177028,"school",NA,NA
+232511597,"Escola Calderón de la Barca",NA,NA,NA,NA,NA,2.17207506698981,41.4334988046904,"school",NA,NA
+250588148,"Escola Marinada",NA,NA,NA,NA,NA,2.16969367414703,41.4408922412859,"school",NA,NA
+254880402,"Institut Escola Art. Oriol Martorell","Generalitat de Catalunya",NA,NA,NA,NA,2.17260205118093,41.4413528073326,"school",NA,NA
+259627217,"Institut Josep Pla",NA,NA,NA,NA,NA,2.16454201800195,41.4318228091339,"school",NA,NA
+262054927,"Bemen-3",NA,NA,NA,NA,NA,2.17178022094277,41.4281708335077,"school",NA,NA
+262057264,"FEDAC-Amilcar","FEDAC",NA,NA,NA,NA,2.17173583875506,41.4297096796309,"school",NA,NA
+268468845,"Escola Splai",NA,NA,NA,NA,NA,2.17398247140723,41.4332872494856,"school",NA,NA
+268473382,"CFA Madrid",NA,NA,NA,NA,NA,2.17450859008947,41.4348272726442,"school",NA,NA
+268475249,"Institut Barcelona-Congrés",NA,NA,NA,NA,NA,2.17374518686035,41.4291600370766,"school",NA,NA
+360117183,"Jesús Maria",NA,NA,NA,NA,NA,2.1677228063207,41.4405718254151,"school",NA,NA
+363801906,"Centre Escolar Valldaura","Franciscanas Misioneras de la Madre del Divino Pastor",NA,NA,NA,NA,2.17967179086925,41.4423186510126,"school",NA,NA
+364396636,"Institut Escola el Molí","Generalitat de Catalunya",NA,NA,NA,NA,2.1809340942416,41.4449590878393,"school",NA,NA
+364582912,"Escola Santiago Rusiñol","Generalitat de Catalunya",NA,NA,NA,NA,2.18043281567302,41.4396678780341,"school",NA,NA
+366322131,"Escola Àgora",NA,NA,NA,NA,NA,2.16837311386086,41.4375544336137,"school",NA,NA
+388312331,"Institut La Guineueta","Generalitat de Catalunya",NA,NA,NA,NA,2.17183469803282,41.4425587452754,"school",NA,NA
+451713513,"Escola Cor de Maria-Sabastida",NA,NA,NA,NA,NA,2.16859310156103,41.4284381287497,"school",NA,NA
+466960630,"Institut Escola Antaviana",NA,NA,NA,NA,NA,2.17888537693542,41.4485868602967,"school",NA,NA
+510242763,"Institut Escola d'Hoteleria i Turisme de Barcelona",NA,NA,NA,NA,NA,2.18085691419252,41.4336194494061,"school",NA,NA
+510253887,"Institut Flos i Calcat",NA,NA,NA,NA,NA,2.18145072408677,41.4378747172497,"school",NA,NA
+510509501,"Institut Tecnològic de Barcelona",NA,NA,NA,NA,NA,2.18631649465662,41.4534231506463,"school",NA,NA
+532923958,"Escola El Turó","Generalitat de Catalunya",NA,NA,NA,NA,2.1709498679286,41.4316643002516,"school",NA,NA
+551902457,"Escola Ciutat Comtal",NA,NA,NA,NA,NA,2.18308907159627,41.4628752038544,"school",NA,NA
+638575622,"Escola Mestre Morera",NA,NA,NA,NA,NA,2.16770598928084,41.4593191020112,"school",NA,NA
+638576135,"Escola Ferrer i Guàrdia",NA,NA,NA,NA,NA,2.17480504505878,41.4614602545084,"school",NA,NA
+638576602,"Centre Educatiu Mare Alfonsa Cavin",NA,NA,NA,NA,NA,2.17514902320827,41.4603243835046,"school",NA,NA
+638577491,"Escola Elisenda de Montcada",NA,NA,NA,NA,NA,2.17902101094071,41.4602596489493,"school",NA,NA
+658769736,"Afa Ciutat Meridiana",NA,NA,NA,NA,NA,2.17160620042143,41.4591239263446,"school",NA,NA
+659895643,"Escola Timbaler del Bruc",NA,NA,NA,NA,NA,2.17773275034799,41.428393029275,"school",NA,NA
+670329358,"Institut Escola Turó de Roquetes",NA,NA,NA,NA,NA,2.17309885765134,41.4463346394153,"school",NA,NA
+671912591,"Institut Escola Turó de Roquetes",NA,NA,NA,NA,NA,2.17118398785836,41.4467825982587,"school",NA,NA
+751654983,"Deià Escola d'Art i Superior de Disseny",NA,NA,NA,NA,NA,2.16778726685856,41.4442727061018,"school",NA,NA
+800310671,"Sant Lluís",NA,NA,NA,NA,NA,2.18214823726152,41.4420463999127,"school",NA,NA
+971600986,"Escola Palma de Mallorca",NA,NA,NA,NA,NA,2.17751905160083,41.4329816795965,"school",NA,NA
+1015010007,"Escola Tomàs Moro",NA,NA,NA,NA,NA,2.16346775015761,41.4427792003256,"school",NA,NA
+1238390637,"Escola Marta Mata",NA,NA,NA,NA,NA,2.17643828521481,41.4425217191396,"school",NA,NA
+36007259,"Escola Pegaso - Instiut Príncep de Viana",NA,NA,NA,NA,NA,2.18715194646325,41.4280251545281,"school",NA,NA
+50883785,"Escola Arrels",NA,NA,NA,NA,NA,2.18125101481471,41.4266807908573,"school",NA,NA
+50883830,"Col·legi La Salle Congrés",NA,NA,NA,NA,NA,2.1821960510837,41.4259294869647,"school",NA,NA
+159141210,"Escola La Maquinista",NA,NA,NA,NA,NA,2.19621899064207,41.439307900735,"school",NA,NA
+216870592,"Escola Ignasi Iglésias",NA,NA,NA,NA,8030,2.19139615148741,41.4415085318618,"school",NA,NA
+339558255,"Institut Joan Fuster",NA,NA,NA,NA,8027,2.18574751171723,41.4186956444634,"school",NA,NA
+431234792,"Escola Turó Blau",NA,NA,NA,NA,8030,2.19119004099477,41.4280172576964,"school",NA,NA
+468015734,"Institut Escola El Til·ler",NA,NA,NA,NA,NA,2.20339410146081,41.4388786794355,"school",NA,NA
+469100613,"Escola Eulàlia Bota",NA,NA,NA,NA,8030,2.19242739975113,41.4448623557378,"school",NA,NA
+469114784,"Institut Escola Rec Comtal",NA,NA,NA,NA,NA,2.19284121939539,41.4502400191291,"school",NA,NA
+476694395,"Escola Can Fabra",NA,NA,NA,NA,NA,2.19213189290839,41.433515093165,"school",NA,NA
+476699381,"Escola Bon Pastor",NA,NA,NA,NA,NA,2.20426199269327,41.4358393065144,"school",NA,NA
+506974504,"Institut Doctor Puigvert","Consorci d'Educació de Barcelona","public",NA,NA,8030,2.19347360761405,41.445797174804,"school",NA,NA
+520250974,"Escola Pompeu Fabra",NA,NA,NA,NA,NA,2.18335856898351,41.4217172012613,"school",NA,NA
+555977387,"Centre d'Estudis Roca",NA,NA,NA,NA,NA,2.18631160904544,41.4218748420145,"school",NA,NA
+641194655,"FEDAC Sant Andreu",NA,NA,NA,NA,NA,2.19165779915373,41.4322990542846,"school",NA,NA
+641518665,"Escola l'Estel",NA,NA,NA,NA,NA,2.18885918310814,41.4193061592606,"school",NA,NA
+641710507,"Escola El Sagrer",NA,NA,NA,NA,NA,2.18974096172529,41.4220536397617,"school",NA,NA
+643186692,"Escola Baró de Viver",NA,NA,NA,NA,NA,2.19967489909588,41.4456441266543,"school",NA,NA
+644458201,"Escola Laia",NA,NA,NA,NA,NA,2.18930935564083,41.4292281943328,"school",NA,NA
+655717687,"Institut Escola Rec Comtal",NA,NA,NA,NA,NA,2.1917913602744,41.451530980446,"school",NA,NA
+656236493,"Santísima Trinidad",NA,NA,NA,NA,NA,2.19107028487733,41.450441295918,"school",NA,NA
+662893704,"Escola Emili Juncadella",NA,NA,NA,NA,NA,2.18147669733584,41.4178860281239,"school",NA,NA
+663445218,"Mare de Déu dels Àngels",NA,NA,NA,NA,NA,2.19067628623632,41.4254229752045,"school",NA,NA
+679260709,"Col·legi Jesús Maria i Josep","Congregació de Religioses Jesús Maria",NA,NA,NA,8030,2.18382973658461,41.4308462040793,"school",NA,NA
+784580077,"Escola Octavio Paz",NA,NA,NA,NA,NA,2.18931396388132,41.414403266787,"school",NA,NA
+970600843,"Institut Sagrera Sant Andreu",NA,NA,NA,NA,NA,2.1936442325817,41.4392645508774,"school",NA,NA
+1332692545,"Escola Congrés-Indians",NA,NA,NA,NA,NA,2.18925828499098,41.4253654741342,"school",NA,NA
+44375803,"Escola Sant Martí",NA,NA,NA,NA,NA,2.19766164315182,41.4044351077286,"school",NA,NA
+176252456,"Escola Antoni Brusi",NA,NA,NA,NA,NA,2.1892917803816,41.3908988115268,"school",NA,NA
+181595100,"Escolàpies Sant Martí - Barcelona",NA,NA,NA,NA,NA,2.18173786956994,41.4124286026588,"school",NA,NA
+183087978,"Escola Les Acàcies",NA,NA,NA,NA,NA,2.20472865736987,41.4042369060486,"school",NA,NA
+183087979,"Escola La Mar Bella",NA,NA,NA,NA,NA,2.20457328693621,41.3998697716034,"school",NA,NA
+198437142,"Institut Icària","Generalitat de Catalunya. Departament d'Ensenyament",NA,NA,NA,NA,2.1959651055755,41.3938449492131,"school",NA,NA
+296720102,"Escola La Caixa",NA,NA,NA,NA,8020,2.20336558204527,41.4169370582178,"school",NA,NA
+296741692,"Escola Bac de Roda","Consorci d'Educació de Barcelona",NA,NA,NA,8020,2.19385348783693,41.4160831257917,"school",NA,NA
+296743151,"Escola Brasil",NA,NA,NA,NA,NA,2.20508942987897,41.4158726910913,"school",NA,NA
+338023155,"Centre d'Estudis Montseny-Poblenou",NA,NA,NA,NA,NA,2.21071615308536,41.4103442840456,"school",NA,NA
+349200309,"Institut Infanta Isabel d'Aragó","Generalitat de Catalunya",NA,NA,NA,8020,2.19955397827668,41.416026650365,"school",NA,NA
+358564800,"Escola Joaquim Ruyra","Departament d'Ensenyament",NA,NA,NA,NA,2.21453793885757,41.4111849904376,"school",NA,NA
+364588328,"Institut Bernat Metge","Generalitat de Catalunya",NA,NA,NA,NA,2.20162641331332,41.4231809945686,"school",NA,NA
+364588329,"Centre de Formació Profesional Integrada. CFA Montserrat Roig","Generalitat de Catalunya",NA,NA,NA,NA,2.21228244369095,41.4158909829242,"school",NA,NA
+388316942,"Escola Santa Maria dels Apòstols",NA,NA,NA,NA,NA,2.21049810982909,41.4184002596508,"school",NA,NA
+413690295,"Escola Poblenou","Generalitat de Catalunya. Departament d'Ensenyament",NA,NA,NA,NA,2.1972858981245,41.4098810371397,"school",NA,NA
+425374597,"Escola Casas",NA,NA,NA,NA,NA,2.19246951177639,41.4082758073288,"school",NA,NA
+428478265,"Escola Rambleta del Clot","Consorci d'Educació de Barcelona",NA,NA,NA,NA,2.19001122668024,41.4104646768783,"school",NA,NA
+431290075,"Escola Els Porxos","Generalitat de Catalunya",NA,NA,NA,NA,2.19809289406593,41.4148747383094,"school",NA,NA
+431445969,"Centre d'educació Adela de Trenquelleón","Marianistes",NA,NA,NA,8018,2.19464268811625,41.4139478079164,"school",NA,NA
+432505109,"Escola Provençals",NA,NA,NA,NA,NA,2.19477108857964,41.4079571781063,"school",NA,NA
+432987136,"El Petit Santa Maria",NA,NA,NA,NA,NA,2.20766583946401,41.4224669041256,"school",NA,NA
+433861068,"Institut Salvador Seguí","Generalitat de Catalunya",NA,NA,NA,NA,2.1964112617566,41.4231051855225,"school",NA,NA
+435332225,"Centre Educatiu Sagrat Cor Besòs",NA,NA,NA,NA,NA,2.21821250946957,41.4154509966059,"school",NA,NA
+435786423,"Escola L'Arc de Sant Martí",NA,NA,NA,NA,NA,2.19953875368129,41.4228180869451,"school",NA,NA
+435827622,"Escola Concepción Arenal",NA,NA,NA,NA,NA,2.21547968632266,41.4173168889258,"school",NA,NA
+436257775,"Escola La Flor de Maig",NA,NA,NA,NA,NA,2.19609497098572,41.4025846386139,"school",NA,NA
+436263827,"Escola Eduard Marquina",NA,NA,NA,NA,NA,2.21423079437618,41.4182802990497,"school",NA,NA
+436454450,"Escola Vila Olímpica",NA,NA,NA,NA,NA,2.20279506341275,41.3938387981671,"school",NA,NA
+436731285,"Escola Prim",NA,NA,NA,NA,NA,2.21191669638406,41.4200097391826,"school",NA,NA
+437673155,"Centre Educatiu Grèvol",NA,NA,NA,NA,NA,2.21142872969334,41.4050042589687,"school",NA,NA
+457277596,"Escola La Pau",NA,NA,NA,NA,NA,2.20937964901888,41.4240265473169,"school",NA,NA
+486059748,"Institut Quatre Cantons",NA,NA,NA,NA,NA,2.20012295377317,41.4044041002814,"school",NA,NA
+550468031,"Institut Maria Espinalt",NA,NA,NA,NA,NA,2.20290267994131,41.4057794343031,"school",NA,NA
+640318320,"Escola Cascavell","Generalitat de Catalunya. Departament d'Ensenyament",NA,NA,NA,8930,2.21378912431009,41.4202501593809,"school",NA,NA
+643158092,"Escola La Llacuna del Poblenou",NA,NA,NA,NA,NA,2.19831752790125,41.4021203176806,"school",NA,NA
+653434474,"Escola Voramar",NA,NA,NA,NA,NA,2.19831547610797,41.3958629170965,"school",NA,NA
+679070047,"Col·legi Educació Especial Concha Espina",NA,NA,NA,NA,NA,2.20875259592589,41.4183773928951,"school",NA,NA
+906581451,"Escola Auditori","Generalitat de Catalunya",NA,NA,NA,8018,2.18812414495333,41.3966839551114,"school",NA,NA
+6420489985,"Equipament integral d'Horta",NA,NA,NA,NA,NA,2.1536086,41.4342417,"social_centre","shelter",NA
+8025467207,"Pis Zero (Arrels Fundació)",NA,NA,NA,NA,NA,2.1675845,41.3807152,"social_centre","shelter","underprivileged"
+11046104507,"Fundació Roure. Centre de dia",NA,NA,NA,NA,NA,2.1800893,41.3881487,"social_centre","day_care",NA
+11021974622,"Las Arcadias",NA,NA,NA,NA,NA,2.1689338,41.390281,"social_centre","nursing_home",NA
+7714282666,"Centre de Dia Barcelona 2",NA,NA,NA,NA,8028,2.1263707,41.3772,"social_centre","nursing_home","senior"
+12655973526,"Unitat d'Atenció Diürna - Fundació ACE","Fundació ACE",NA,NA,NA,8029,2.1350525,41.3860333,"social_centre","day_care","senior"
+6110547808,"Icària residencial",NA,NA,NA,NA,NA,2.2052683,41.3978773,"social_centre","nursing_home",NA
+6121493214,"Centre Obert Bogatell","Fundació Icaria Iniciatives Socials",NA,NA,NA,NA,2.1980307,41.3977896,"social_centre","nursing_home",NA
+233386771,"Centre l'Alba",NA,NA,NA,NA,NA,2.14286770121399,41.4108976281156,"social_centre","day_care","mental_health"
+259629173,"Centre de Dia - Residència Assistida per a Gent Gran d'Horta","Generalitat de Catalunya;Fundació Vallparadís",NA,NA,NA,NA,2.15098172130748,41.4255223887746,"social_centre","nursing_home",NA
+1124675779,"Amavir Horta",NA,NA,NA,NA,NA,2.15162717187911,41.435330792675,"social_centre","nursing_home","senior"
+217475708,"Residència i Centre de Dia de Gent Gan Font Florida","Grup Mutuam",NA,NA,NA,NA,2.14176666489596,41.367739834588,"social_centre","nursing_home",NA
+249404397,"Residencia Centre Parc",NA,NA,NA,NA,NA,2.13461974454137,41.381091347697,"social_centre","nursing_home","senior"
+947879680,"Residència per a gent gran La Salut Josep Servat","DomusVi",NA,NA,NA,8024,2.15675517186316,41.413794920066,"social_centre","nursing_home","senior"
+793288835,"Ballesol",NA,NA,NA,NA,NA,2.1801001618638,41.4298821249438,"social_centre","nursing_home",NA
+520248296,"Centre de dia-Residència d'Avis",NA,NA,NA,NA,NA,2.18165196580624,41.4162880172257,"social_centre","day_care","senior"
+556334728,"Enginyeria i Arquitectura la Salle",NA,NA,NA,NA,NA,2.1301533,41.4083057,"university",NA,NA
+556334799,"Enginyeria i Arquitectura La Salle",NA,NA,NA,NA,NA,2.130224,41.4093346,"university",NA,NA
+2195909111,"Institut Químic de Sarrià",NA,NA,NA,NA,NA,2.1198427,41.4031261,"university",NA,NA
+6720644664,"Escola Universitària Salesiana de Sarrià EUSS",NA,NA,NA,NA,NA,2.1264003,41.3953882,"university",NA,NA
+7400751092,"ISDE Law School",NA,NA,NA,NA,8022,2.1350108,41.4132856,"university",NA,NA
+5182120247,"Facultat de Psicologia","Universitat de Barcelona",NA,NA,NA,8035,2.1428658,41.4382119,"university",NA,NA
+5182120248,"Facultat d'Educació","Universitat de Barcelona",NA,NA,NA,8035,2.1449202,41.437684,"university",NA,NA
+674659183,"Alberg Sea Point Hostel",NA,NA,NA,NA,8003,2.1895807,41.3752504,"university",NA,NA
+3109227626,"BSM Parc de Recerca Biomèdica","BSM",NA,NA,NA,NA,2.1937817,41.385353,"university",NA,NA
+10294712109,"UPC Facultat de Nàutica de Barcelona",NA,NA,NA,NA,NA,2.1881164,41.3758229,"university",NA,NA
+4724951623,"EAE Bussines School",NA,NA,NA,NA,NA,2.1488866,41.38039,"university",NA,NA
+11422435269,"Escola Superior de Relacions Públiques",NA,NA,NA,NA,NA,2.1548775,41.3773076,"university",NA,NA
+1014490250,"Facultat de Física","Universitat de Barcelona",NA,NA,NA,8028,2.1171243,41.3842917,"university",NA,NA
+1375035013,"Col·legi Major Penyafort",NA,NA,NA,NA,8028,2.1214641,41.3861356,"university",NA,NA
+2681809198,"IESE Business School","Universidad de Navarra",NA,NA,NA,8034,2.1079674,41.3935611,"university",NA,NA
+3211302548,"Academia CEUS",NA,NA,NA,NA,8034,2.1139345,41.3869023,"university",NA,NA
+4138823571,"IEEE BCN Student branch",NA,NA,NA,NA,NA,2.1135757,41.3883168,"university",NA,NA
+7127193661,"IGEMA","Universitat Rovira i Virgili",NA,NA,NA,8028,2.1244721,41.3861721,"university",NA,NA
+7476846985,"Facultat de Biologia","Universitat de Barcelona","public",NA,NA,8028,2.1200921,41.3856342,"university",NA,NA
+7929044523,"Escola de Noves Tecnologies Interactives",NA,NA,NA,NA,8028,2.1166738,41.3822435,"university",NA,NA
+9554433464,"Residencia Universitaria Torre Girona",NA,NA,NA,NA,NA,2.1163894,41.3902411,"university",NA,NA
+9565988972,"Facultat d'Economia i Empresa",NA,NA,NA,NA,8034,2.1138109,41.3855527,"university",NA,NA
+3964808309,"INSA. Business, Marketing & Communication School",NA,NA,NA,NA,8012,2.1533058,41.4056785,"university",NA,NA
+6216218163,"Universitat Pompeu Fabra–Campus del Poblenou","UPF",NA,NA,NA,8018,2.1937054,41.4043275,"university",NA,NA
+150773336,"IQS",NA,NA,NA,NA,NA,2.11959569870222,41.4034662775644,"university",NA,NA
+170073155,"Col·legi d'Ingenyers de Camis, Canasl i Ports de Catalunya",NA,NA,NA,NA,NA,2.13011371554816,41.3993734526072,"university",NA,NA
+302997173,"Universitat Ramon Llull",NA,NA,NA,NA,NA,2.13326489849779,41.4118261354385,"university",NA,NA
+313602058,"La Salle Campus Barcelona","Universitat Ramon Llull",NA,NA,NA,NA,2.12997609761565,41.4085411673011,"university",NA,NA
+417321320,"European University Business School",NA,NA,NA,NA,NA,2.13555858306822,41.3980454549778,"university",NA,NA
+1218613118,"Universitat Internacional de Catalunya",NA,NA,NA,NA,NA,2.1210431035515,41.40685548871,"university",NA,NA
+37040758,"Facultat d'Infermeria i Medicina de la UAB",NA,NA,NA,NA,NA,2.13855339570647,41.4287567438022,"university",NA,NA
+442028047,"Facultat Ciències de la Salut. Blanquerna",NA,NA,NA,NA,NA,2.17196702082643,41.4098747387995,"university",NA,NA
+534307907,"Campus Mundet","Universitat de Barcelona",NA,NA,NA,NA,2.14269140896467,41.4370612744742,"university",NA,NA
+645284289,"UAB Campus Sant Pau",NA,NA,NA,NA,NA,2.173675695878,41.4137377520533,"university",NA,NA
+74068875,"Parc de Recerca Biomèdica de Barcelona",NA,NA,NA,NA,NA,2.19435376094379,41.3851444695947,"university",NA,NA
+97464627,"Jardins de Victòria de los Ángeles",NA,NA,NA,NA,NA,2.16736505064112,41.3841991759591,"university",NA,NA
+158670035,"Universitat Pompeu Fabra Campus del Mar",NA,NA,NA,NA,NA,2.19297066728948,41.3847768779954,"university",NA,NA
+176252447,"ESCI - Universitat Pompeu Fabra",NA,NA,NA,NA,NA,2.1819762201701,41.3880953779468,"university",NA,NA
+204143215,"UPF. Rectorat",NA,NA,NA,NA,NA,2.17976653403438,41.3790502659142,"university",NA,NA
+305246003,"Facultat de Comunicació i Relacions Internacionals Blanquerna","Blanquerna - Universitat Ramon Llull",NA,NA,NA,8001,2.16562926642216,41.3832949741853,"university",NA,NA
+667629782,"Espacio Vela FNB",NA,NA,NA,NA,NA,2.18673723922237,41.3631398621172,"university",NA,NA
+9405721,"Universitat de Barcelona",NA,NA,NA,NA,NA,2.16354074673578,41.3868718156819,"university",NA,NA
+176978233,"Facultat de Medicina",NA,NA,NA,NA,NA,2.15235638237627,41.3895599426511,"university",NA,NA
+249401777,"Facultat d'Informació i Mitjans Audiovisuals","Universitat de Barcelona","university",NA,NA,8014,2.13931870847864,41.3810517546886,"university",NA,NA
+674486662,"Institut Nacional d'Educació Física de Catalunya",NA,NA,NA,NA,NA,2.14727067789456,41.364335481441,"university",NA,NA
+7996410,"UPC Campus Nord","Universitat Politècnica de Catalunya",NA,NA,NA,NA,2.11349166246854,41.3888359601484,"university",NA,NA
+35814815,"Facultat de Ciències de la Terra",NA,NA,NA,NA,NA,2.11969880409214,41.3843231978162,"university",NA,NA
+200193277,"ESADE Business School",NA,NA,NA,NA,NA,2.11185395886352,41.3913248940898,"university",NA,NA
+200193280,"ESADE Edifici 1 Campus Barcelona Pedralbes",NA,NA,NA,NA,NA,2.11485924124091,41.3938746688268,"university",NA,NA
+200193285,"ESADE Edifici 2 Campus Barcelona Pedralbes",NA,NA,NA,NA,NA,2.11507832733176,41.3947755670278,"university",NA,NA
+315371615,"IESE Business School","Universidad de Navarra",NA,NA,NA,NA,2.10558940553696,41.3936014022308,"university",NA,NA
+331112605,"Col·legi Major Pedralbes",NA,NA,NA,NA,NA,2.10732128136879,41.3927879984906,"university",NA,NA
+480938045,"Facultat de Dret",NA,NA,NA,NA,NA,2.12071546693413,41.3876051336452,"university",NA,NA
+556737939,"UPC Campus Sud","Universitat Politècnica de Catalunya",NA,NA,NA,NA,2.11497442581609,41.3838692396559,"university",NA,NA
+644294782,"Facultat d'economia i empresa",NA,NA,NA,NA,NA,2.11476267117089,41.3861166288723,"university",NA,NA
+644470542,"Facultat de Física i Química, Universitat de Barcelona",NA,NA,NA,NA,NA,2.11721830887545,41.384731337807,"university",NA,NA
+770232479,"Parc Científic de Barcelona","Universitat de Barcelona",NA,NA,NA,8028,2.11769317473792,41.3817502275081,"university",NA,NA
+98583754,"UNED",NA,NA,NA,NA,NA,2.18058913702751,41.4361082221212,"university",NA,NA
+198505166,"Campus Ciutadella",NA,NA,NA,NA,NA,2.18901834030513,41.3904094702201,"university",NA,NA
+217492872,"IL3 Institut de Formació Contínua","Universitat de Barcelona",NA,NA,NA,NA,2.19209402133338,41.40266426548,"university",NA,NA
