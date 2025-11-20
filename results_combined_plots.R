@@ -487,15 +487,15 @@ combined_plot_tt_athens <- wrap_plots(
     ggtitle("Population Within Walking Time Thresholds", subtitle = " ") +
     theme(plot.title = element_text(size = 12, face = "bold")),
   
-  ncol = 3,
-  nrow = 1,
+  ncol = 2,
+  nrow = 2,
   heights = unit(c(1, 1), "null"),  # equal vertical spacing
   widths = unit(c(1, 1), "null")    # equal horizontal spacing
 ) +
   plot_annotation(
     title = "Athens: Accessibility of Existing Cooling Centres",
     theme = theme(
-      plot.title = element_text(size = 24, face = "bold", hjust = 0.5),
+      plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
       plot.subtitle = element_text(size = 12, hjust = 0.5)
     ) 
   )
@@ -504,10 +504,10 @@ print(combined_plot_tt_athens)
 
 ## Save plot
 ggsave(
-  filename = "Data/combinedplots/accessibility_athens.png",
+  filename = "Data/combinedplots/accessibility_athens_2.png",
   plot     = combined_plot_tt_athens,
-  width    = 12,
-  height   = 4,
+  width    = 8,
+  height   = 6,
   dpi      = 300
 )
 
@@ -525,15 +525,15 @@ combined_plot_tt_barcelona <- wrap_plots(
     ggtitle("Population Within Walking Time Thresholds", subtitle = " ") +
     theme(plot.title = element_text(size = 12, face = "bold")),
   
-  ncol = 3,
-  nrow = 1,
+  ncol = 2,
+  nrow = 2,
   heights = unit(c(1, 1), "null"),  # equal vertical spacing
   widths = unit(c(1, 1), "null")    # equal horizontal spacing
 ) +
   plot_annotation(
     title = "Barcelona: Accessibility of Existing Cooling Centres",
     theme = theme(
-      plot.title = element_text(size = 24, face = "bold", hjust = 0.5),
+      plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
       plot.subtitle = element_text(size = 12, hjust = 0.5)
     ) 
   )
@@ -543,10 +543,10 @@ print(combined_plot_tt_barcelona)
 
 ## Save plot
 ggsave(
-  filename = "Data/combinedplots/accessibility_barcelona.png",
+  filename = "Data/combinedplots/accessibility_barcelona_2.png",
   plot     = combined_plot_tt_barcelona,
-  width    = 12,
-  height   = 4,
+  width    = 8,
+  height   = 6,
   dpi      = 300
 )
 
@@ -566,15 +566,15 @@ combined_plot_tt_bologna <- wrap_plots(
     ggtitle("Population Within Walking Time Thresholds", subtitle = " ") +
     theme(plot.title = element_text(size = 12, face = "bold")),
   
-  ncol = 3,
-  nrow = 1,
+  ncol = 2,
+  nrow = 2,
   heights = unit(c(1, 1), "null"),  # equal vertical spacing
   widths = unit(c(1, 1), "null")    # equal horizontal spacing
 ) +
   plot_annotation(
     title = "Bologna: Accessibility of Existing Cooling Centres",
     theme = theme(
-      plot.title = element_text(size = 24, face = "bold", hjust = 0.5),
+      plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
       plot.subtitle = element_text(size = 12, hjust = 0.5)
     ) 
   )
@@ -583,10 +583,10 @@ print(combined_plot_tt_bologna)
 
 ## Save plot
 ggsave(
-  filename = "Data/combinedplots/accessibility_bologna.png",
+  filename = "Data/combinedplots/accessibility_bologna_2.png",
   plot     = combined_plot_tt_bologna,
-  width    = 12,
-  height   = 4,
+  width    = 8,
+  height   = 6,
   dpi      = 300
 )
 
@@ -605,15 +605,15 @@ combined_plot_tt_vienna <- wrap_plots(
     ggtitle("Population Within Walking Time Thresholds", subtitle = " ") +
     theme(plot.title = element_text(size = 12, face = "bold")),
   
-  ncol = 3,
-  nrow = 1,
+  ncol = 2,
+  nrow = 2,
   heights = unit(c(1, 1), "null"),  # equal vertical spacing
   widths = unit(c(1, 1), "null")    # equal horizontal spacing
 ) +
   plot_annotation(
     title = "Vienna: Accessibility of Existing Cooling Centres",
     theme = theme(
-      plot.title = element_text(size = 24, face = "bold", hjust = 0.5),
+      plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
       plot.subtitle = element_text(size = 12, hjust = 0.5)
     ) 
   )
@@ -622,10 +622,10 @@ print(combined_plot_tt_vienna)
 
 ## Save plot
 ggsave(
-  filename = "Data/combinedplots/accessibility_vienna.png",
+  filename = "Data/combinedplots/accessibility_vienna_2.png",
   plot     = combined_plot_tt_vienna,
-  width    = 12,
-  height   = 4,
+  width    = 8,
+  height   = 6,
   dpi      = 300
 )
 
@@ -1135,6 +1135,16 @@ datasummary(
   ) %>%
   gtsave("Data/combinedplots/input_factor_values_table.png")
 
+## Alternative CSV Output
+## Create the summary as a data frame
+indexsummary_df <- datasummary(
+  `Input Factor` * City ~ index_value * (Min + P25 + Median + P75 + Max + Mean),
+  data = combined_input_data,
+  output = "data.frame"  # Change output to data.frame
+)
+
+## Save as CSV
+write.csv(indexsummary_df, "Data/combinedplots/input_factor_values_table.csv", row.names = FALSE)
 
 #### HEAT RISK INDEX VALUE TABLE ####
 combined_heatrisk_data <- bind_rows(
